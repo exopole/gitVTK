@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Point.h
+iostream
+-
+
+../include/Ray.h
+Point.h
+../include/Point.h
+
+../include/Triangle.h
+Point.h
+../include/Point.h
+
+../include/Vector.h
+Point.h
+../include/Point.h
+
+/home/exopole/Documents/Projet/VTKProject/testCode/main.cpp
+Point.h
+/home/exopole/Documents/Projet/VTKProject/testCode/Point.h
+Vector.h
+/home/exopole/Documents/Projet/VTKProject/testCode/Vector.h
+Ray.h
+/home/exopole/Documents/Projet/VTKProject/testCode/Ray.h
+Triangle.h
+/home/exopole/Documents/Projet/VTKProject/testCode/Triangle.h
+math.h
+-
+

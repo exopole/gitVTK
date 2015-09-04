@@ -1,0 +1,1010 @@
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp: In member function ‘void VolumeVisualisation::newCellsVolume(std::vector<std::vector<float> >*, std::vector<float>, std::vector<std::vector<float> >*, std::vector<float>, int, int)’:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:21: error: no match for ‘operator<<’ (operand types are ‘std::basic_ostream<char>’ and ‘void’)
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                     ^
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:21: note: candidates are:
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:108:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/4.8/ostream:108:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.8/ostream:117:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.8/ostream:117:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.8/ostream:127:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/4.8/ostream:127:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.8/ostream:166:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/4.8/ostream:166:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+/usr/include/c++/4.8/ostream:170:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/4.8/ostream:170:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/usr/include/c++/4.8/ostream:174:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/4.8/ostream:174:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /usr/include/c++/4.8/ostream:612:0,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/bits/ostream.tcc:91:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.8/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:181:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/4.8/ostream:181:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /usr/include/c++/4.8/ostream:612:0,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/bits/ostream.tcc:105:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.8/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:192:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/4.8/ostream:192:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/usr/include/c++/4.8/ostream:201:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/4.8/ostream:201:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/usr/include/c++/4.8/ostream:205:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/4.8/ostream:205:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/usr/include/c++/4.8/ostream:220:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/4.8/ostream:220:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/usr/include/c++/4.8/ostream:224:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/4.8/ostream:224:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/usr/include/c++/4.8/ostream:232:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/4.8/ostream:232:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/usr/include/c++/4.8/ostream:245:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/4.8/ostream:245:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /usr/include/c++/4.8/ostream:612:0,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/bits/ostream.tcc:119:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.8/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /home/exopole/Documents/Projet/VTKProject/Cornee/include/Triangle.h:5:0,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/UtilsGeometry.h:18,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/UtilsVector.h:7,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:15,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/home/exopole/Documents/Projet/VTKProject/Cornee/include/Vecteur3D.h:197:15: note: template<class F> std::ostream& operator<<(std::ostream&, const Vecteur3D<F>&)
+ std::ostream& operator << (std::ostream &s, const Vecteur3D<F> &v){
+               ^
+/home/exopole/Documents/Projet/VTKProject/Cornee/include/Vecteur3D.h:197:15: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   mismatched types ‘const Vecteur3D<F>’ and ‘void’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/local/include/vtk-6.3/vtkMapper.h:58:0,
+                 from /usr/local/include/vtk-6.3/vtkPolyDataMapper.h:26,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/UtilsVTK.h:6,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:11,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/local/include/vtk-6.3/vtkSmartPointer.h:206:17: note: template<class T> std::ostream& operator<<(std::ostream&, const vtkSmartPointer<T>&)
+ inline ostream& operator << (ostream& os, const vtkSmartPointer<T>& p)
+                 ^
+/usr/local/include/vtk-6.3/vtkSmartPointer.h:206:17: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   mismatched types ‘const vtkSmartPointer<T>’ and ‘void’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/local/include/vtk-6.3/vtkSmartPointer.h:23:0,
+                 from /usr/local/include/vtk-6.3/vtkMapper.h:58,
+                 from /usr/local/include/vtk-6.3/vtkPolyDataMapper.h:26,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/UtilsVTK.h:6,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:11,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/local/include/vtk-6.3/vtkSmartPointerBase.h:116:31: note: std::ostream& operator<<(std::ostream&, const vtkSmartPointerBase&)
+ VTKCOMMONCORE_EXPORT ostream& operator << (ostream& os,
+                               ^
+/usr/local/include/vtk-6.3/vtkSmartPointerBase.h:116:31: note:   no known conversion for argument 2 from ‘void’ to ‘const vtkSmartPointerBase&’
+In file included from /usr/local/include/vtk-6.3/vtkAbstractArray.h:46:0,
+                 from /usr/local/include/vtk-6.3/vtkDataArray.h:38,
+                 from /usr/local/include/vtk-6.3/vtkIdTypeArray.h:30,
+                 from /usr/local/include/vtk-6.3/vtkCellArray.h:38,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:6,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/local/include/vtk-6.3/vtkVariant.h:398:40: note: std::ostream& operator<<(std::ostream&, const vtkVariant&)
+   friend VTKCOMMONCORE_EXPORT ostream& operator << ( ostream& os, const vtkVariant& val );
+                                        ^
+/usr/local/include/vtk-6.3/vtkVariant.h:398:40: note:   no known conversion for argument 2 from ‘void’ to ‘const vtkVariant&’
+In file included from /usr/local/include/vtk-6.3/vtkVariant.h:36:0,
+                 from /usr/local/include/vtk-6.3/vtkAbstractArray.h:46,
+                 from /usr/local/include/vtk-6.3/vtkDataArray.h:38,
+                 from /usr/local/include/vtk-6.3/vtkIdTypeArray.h:30,
+                 from /usr/local/include/vtk-6.3/vtkCellArray.h:38,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:6,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/local/include/vtk-6.3/vtkStdString.h:29:31: note: std::ostream& operator<<(std::ostream&, const vtkStdString&)
+ VTKCOMMONCORE_EXPORT ostream& operator<<(ostream&, const vtkStdString&);
+                               ^
+/usr/local/include/vtk-6.3/vtkStdString.h:29:31: note:   no known conversion for argument 2 from ‘void’ to ‘const vtkStdString&’
+In file included from /usr/local/include/vtk-6.3/vtkObject.h:45:0,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:30,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/local/include/vtk-6.3/vtkWeakPointerBase.h:108:31: note: std::ostream& operator<<(std::ostream&, const vtkWeakPointerBase&)
+ VTKCOMMONCORE_EXPORT ostream& operator << (ostream& os,
+                               ^
+/usr/local/include/vtk-6.3/vtkWeakPointerBase.h:108:31: note:   no known conversion for argument 2 from ‘void’ to ‘const vtkWeakPointerBase&’
+In file included from /usr/local/include/vtk-6.3/vtkObjectBase.h:44:0,
+                 from /usr/local/include/vtk-6.3/vtkObject.h:42,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:30,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/local/include/vtk-6.3/vtkIndent.h:45:40: note: std::ostream& operator<<(std::ostream&, const vtkIndent&)
+   friend VTKCOMMONCORE_EXPORT ostream& operator<<(ostream& os, const vtkIndent& o);
+                                        ^
+/usr/local/include/vtk-6.3/vtkIndent.h:45:40: note:   no known conversion for argument 2 from ‘void’ to ‘const vtkIndent&’
+In file included from /usr/local/include/vtk-6.3/vtkIOStream.h:35:0,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/iomanip:235:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setw)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+     ^
+/usr/include/c++/4.8/iomanip:235:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   cannot convert ‘(& extremFacesMat1.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)i)))->Point::print()’ (type ‘void’) to type ‘std::_Setw’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/local/include/vtk-6.3/vtkIOStream.h:35:0,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/iomanip:205:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setprecision)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+     ^
+/usr/include/c++/4.8/iomanip:205:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   cannot convert ‘(& extremFacesMat1.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)i)))->Point::print()’ (type ‘void’) to type ‘std::_Setprecision’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/local/include/vtk-6.3/vtkIOStream.h:35:0,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/iomanip:175:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setfill<_CharT>)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+     ^
+/usr/include/c++/4.8/iomanip:175:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   mismatched types ‘std::_Setfill<_CharT>’ and ‘void’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/local/include/vtk-6.3/vtkIOStream.h:35:0,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/iomanip:140:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setbase)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+     ^
+/usr/include/c++/4.8/iomanip:140:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   cannot convert ‘(& extremFacesMat1.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)i)))->Point::print()’ (type ‘void’) to type ‘std::_Setbase’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/local/include/vtk-6.3/vtkIOStream.h:35:0,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/iomanip:106:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setiosflags)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+     ^
+/usr/include/c++/4.8/iomanip:106:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   cannot convert ‘(& extremFacesMat1.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)i)))->Point::print()’ (type ‘void’) to type ‘std::_Setiosflags’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/local/include/vtk-6.3/vtkIOStream.h:35:0,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/iomanip:76:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Resetiosflags)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+     ^
+/usr/include/c++/4.8/iomanip:76:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   cannot convert ‘(& extremFacesMat1.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)i)))->Point::print()’ (type ‘void’) to type ‘std::_Resetiosflags’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.8/ostream:548:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   cannot convert ‘(& extremFacesMat1.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)i)))->Point::print()’ (type ‘void’) to type ‘const unsigned char*’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.8/ostream:543:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   cannot convert ‘(& extremFacesMat1.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)i)))->Point::print()’ (type ‘void’) to type ‘const signed char*’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.8/ostream:530:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   cannot convert ‘(& extremFacesMat1.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)i)))->Point::print()’ (type ‘void’) to type ‘const char*’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/include/c++/4.8/ostream:612:0,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.8/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   cannot convert ‘(& extremFacesMat1.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)i)))->Point::print()’ (type ‘void’) to type ‘const char*’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.8/ostream:513:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   mismatched types ‘const _CharT*’ and ‘void’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.8/ostream:493:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   cannot convert ‘(& extremFacesMat1.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)i)))->Point::print()’ (type ‘void’) to type ‘unsigned char’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.8/ostream:488:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   cannot convert ‘(& extremFacesMat1.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)i)))->Point::print()’ (type ‘void’) to type ‘signed char’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.8/ostream:482:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   cannot convert ‘(& extremFacesMat1.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)i)))->Point::print()’ (type ‘void’) to type ‘char’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.8/ostream:476:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   cannot convert ‘(& extremFacesMat1.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)i)))->Point::print()’ (type ‘void’) to type ‘char’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.8/ostream:471:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/bits/basic_string.h:2753:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2753:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:201:49: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+   std::cout << ", " << extremFacesMat1[i].print() ;
+                                                 ^
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:13: error: no match for ‘operator<<’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘void’)
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+             ^
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:13: note: candidates are:
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:108:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/4.8/ostream:108:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.8/ostream:117:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.8/ostream:117:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.8/ostream:127:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/4.8/ostream:127:7: note:   no known conversion for argument 1 from ‘void’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.8/ostream:166:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/4.8/ostream:166:7: note:   no known conversion for argument 1 from ‘void’ to ‘long int’
+/usr/include/c++/4.8/ostream:170:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/4.8/ostream:170:7: note:   no known conversion for argument 1 from ‘void’ to ‘long unsigned int’
+/usr/include/c++/4.8/ostream:174:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/4.8/ostream:174:7: note:   no known conversion for argument 1 from ‘void’ to ‘bool’
+In file included from /usr/include/c++/4.8/ostream:612:0,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/bits/ostream.tcc:91:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.8/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘void’ to ‘short int’
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:181:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/4.8/ostream:181:7: note:   no known conversion for argument 1 from ‘void’ to ‘short unsigned int’
+In file included from /usr/include/c++/4.8/ostream:612:0,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/bits/ostream.tcc:105:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.8/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘void’ to ‘int’
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:192:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/4.8/ostream:192:7: note:   no known conversion for argument 1 from ‘void’ to ‘unsigned int’
+/usr/include/c++/4.8/ostream:201:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/4.8/ostream:201:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long int’
+/usr/include/c++/4.8/ostream:205:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/4.8/ostream:205:7: note:   no known conversion for argument 1 from ‘void’ to ‘long long unsigned int’
+/usr/include/c++/4.8/ostream:220:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/4.8/ostream:220:7: note:   no known conversion for argument 1 from ‘void’ to ‘double’
+/usr/include/c++/4.8/ostream:224:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/4.8/ostream:224:7: note:   no known conversion for argument 1 from ‘void’ to ‘float’
+/usr/include/c++/4.8/ostream:232:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/4.8/ostream:232:7: note:   no known conversion for argument 1 from ‘void’ to ‘long double’
+/usr/include/c++/4.8/ostream:245:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/4.8/ostream:245:7: note:   no known conversion for argument 1 from ‘void’ to ‘const void*’
+In file included from /usr/include/c++/4.8/ostream:612:0,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/bits/ostream.tcc:119:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.8/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘void’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /home/exopole/Documents/Projet/VTKProject/Cornee/include/Triangle.h:5:0,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/UtilsGeometry.h:18,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/UtilsVector.h:7,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:15,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/home/exopole/Documents/Projet/VTKProject/Cornee/include/Vecteur3D.h:197:15: note: template<class F> std::ostream& operator<<(std::ostream&, const Vecteur3D<F>&)
+ std::ostream& operator << (std::ostream &s, const Vecteur3D<F> &v){
+               ^
+/home/exopole/Documents/Projet/VTKProject/Cornee/include/Vecteur3D.h:197:15: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   mismatched types ‘const Vecteur3D<F>’ and ‘void’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/local/include/vtk-6.3/vtkMapper.h:58:0,
+                 from /usr/local/include/vtk-6.3/vtkPolyDataMapper.h:26,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/UtilsVTK.h:6,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:11,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/local/include/vtk-6.3/vtkSmartPointer.h:206:17: note: template<class T> std::ostream& operator<<(std::ostream&, const vtkSmartPointer<T>&)
+ inline ostream& operator << (ostream& os, const vtkSmartPointer<T>& p)
+                 ^
+/usr/local/include/vtk-6.3/vtkSmartPointer.h:206:17: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   mismatched types ‘const vtkSmartPointer<T>’ and ‘void’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/local/include/vtk-6.3/vtkSmartPointer.h:23:0,
+                 from /usr/local/include/vtk-6.3/vtkMapper.h:58,
+                 from /usr/local/include/vtk-6.3/vtkPolyDataMapper.h:26,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/UtilsVTK.h:6,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:11,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/local/include/vtk-6.3/vtkSmartPointerBase.h:116:31: note: std::ostream& operator<<(std::ostream&, const vtkSmartPointerBase&)
+ VTKCOMMONCORE_EXPORT ostream& operator << (ostream& os,
+                               ^
+/usr/local/include/vtk-6.3/vtkSmartPointerBase.h:116:31: note:   no known conversion for argument 2 from ‘void’ to ‘const vtkSmartPointerBase&’
+In file included from /usr/local/include/vtk-6.3/vtkAbstractArray.h:46:0,
+                 from /usr/local/include/vtk-6.3/vtkDataArray.h:38,
+                 from /usr/local/include/vtk-6.3/vtkIdTypeArray.h:30,
+                 from /usr/local/include/vtk-6.3/vtkCellArray.h:38,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:6,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/local/include/vtk-6.3/vtkVariant.h:398:40: note: std::ostream& operator<<(std::ostream&, const vtkVariant&)
+   friend VTKCOMMONCORE_EXPORT ostream& operator << ( ostream& os, const vtkVariant& val );
+                                        ^
+/usr/local/include/vtk-6.3/vtkVariant.h:398:40: note:   no known conversion for argument 2 from ‘void’ to ‘const vtkVariant&’
+In file included from /usr/local/include/vtk-6.3/vtkVariant.h:36:0,
+                 from /usr/local/include/vtk-6.3/vtkAbstractArray.h:46,
+                 from /usr/local/include/vtk-6.3/vtkDataArray.h:38,
+                 from /usr/local/include/vtk-6.3/vtkIdTypeArray.h:30,
+                 from /usr/local/include/vtk-6.3/vtkCellArray.h:38,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:6,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/local/include/vtk-6.3/vtkStdString.h:29:31: note: std::ostream& operator<<(std::ostream&, const vtkStdString&)
+ VTKCOMMONCORE_EXPORT ostream& operator<<(ostream&, const vtkStdString&);
+                               ^
+/usr/local/include/vtk-6.3/vtkStdString.h:29:31: note:   no known conversion for argument 2 from ‘void’ to ‘const vtkStdString&’
+In file included from /usr/local/include/vtk-6.3/vtkObject.h:45:0,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:30,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/local/include/vtk-6.3/vtkWeakPointerBase.h:108:31: note: std::ostream& operator<<(std::ostream&, const vtkWeakPointerBase&)
+ VTKCOMMONCORE_EXPORT ostream& operator << (ostream& os,
+                               ^
+/usr/local/include/vtk-6.3/vtkWeakPointerBase.h:108:31: note:   no known conversion for argument 2 from ‘void’ to ‘const vtkWeakPointerBase&’
+In file included from /usr/local/include/vtk-6.3/vtkObjectBase.h:44:0,
+                 from /usr/local/include/vtk-6.3/vtkObject.h:42,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:30,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/local/include/vtk-6.3/vtkIndent.h:45:40: note: std::ostream& operator<<(std::ostream&, const vtkIndent&)
+   friend VTKCOMMONCORE_EXPORT ostream& operator<<(ostream& os, const vtkIndent& o);
+                                        ^
+/usr/local/include/vtk-6.3/vtkIndent.h:45:40: note:   no known conversion for argument 2 from ‘void’ to ‘const vtkIndent&’
+In file included from /usr/local/include/vtk-6.3/vtkIOStream.h:35:0,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/iomanip:235:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setw)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+     ^
+/usr/include/c++/4.8/iomanip:235:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   cannot convert ‘(& extremFacesMat2.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)countMat2)))->Point::print()’ (type ‘void’) to type ‘std::_Setw’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/local/include/vtk-6.3/vtkIOStream.h:35:0,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/iomanip:205:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setprecision)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+     ^
+/usr/include/c++/4.8/iomanip:205:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   cannot convert ‘(& extremFacesMat2.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)countMat2)))->Point::print()’ (type ‘void’) to type ‘std::_Setprecision’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/local/include/vtk-6.3/vtkIOStream.h:35:0,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/iomanip:175:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setfill<_CharT>)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+     ^
+/usr/include/c++/4.8/iomanip:175:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   mismatched types ‘std::_Setfill<_CharT>’ and ‘void’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/local/include/vtk-6.3/vtkIOStream.h:35:0,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/iomanip:140:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setbase)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+     ^
+/usr/include/c++/4.8/iomanip:140:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   cannot convert ‘(& extremFacesMat2.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)countMat2)))->Point::print()’ (type ‘void’) to type ‘std::_Setbase’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/local/include/vtk-6.3/vtkIOStream.h:35:0,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/iomanip:106:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setiosflags)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+     ^
+/usr/include/c++/4.8/iomanip:106:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   cannot convert ‘(& extremFacesMat2.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)countMat2)))->Point::print()’ (type ‘void’) to type ‘std::_Setiosflags’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/local/include/vtk-6.3/vtkIOStream.h:35:0,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/iomanip:76:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Resetiosflags)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+     ^
+/usr/include/c++/4.8/iomanip:76:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   cannot convert ‘(& extremFacesMat2.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)countMat2)))->Point::print()’ (type ‘void’) to type ‘std::_Resetiosflags’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.8/ostream:548:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   cannot convert ‘(& extremFacesMat2.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)countMat2)))->Point::print()’ (type ‘void’) to type ‘const unsigned char*’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.8/ostream:543:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   cannot convert ‘(& extremFacesMat2.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)countMat2)))->Point::print()’ (type ‘void’) to type ‘const signed char*’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.8/ostream:530:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   cannot convert ‘(& extremFacesMat2.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)countMat2)))->Point::print()’ (type ‘void’) to type ‘const char*’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/include/c++/4.8/ostream:612:0,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.8/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   cannot convert ‘(& extremFacesMat2.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)countMat2)))->Point::print()’ (type ‘void’) to type ‘const char*’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.8/ostream:513:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   mismatched types ‘const _CharT*’ and ‘void’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.8/ostream:493:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   cannot convert ‘(& extremFacesMat2.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)countMat2)))->Point::print()’ (type ‘void’) to type ‘unsigned char’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.8/ostream:488:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   cannot convert ‘(& extremFacesMat2.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)countMat2)))->Point::print()’ (type ‘void’) to type ‘signed char’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.8/ostream:482:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   cannot convert ‘(& extremFacesMat2.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)countMat2)))->Point::print()’ (type ‘void’) to type ‘char’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.8/ostream:476:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   cannot convert ‘(& extremFacesMat2.std::vector<_Tp, _Alloc>::operator[]<Point, std::allocator<Point> >(((std::vector<Point>::size_type)countMat2)))->Point::print()’ (type ‘void’) to type ‘char’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.8/ostream:471:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘void’)
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from /usr/local/include/vtk-6.3/vtkIOStream.h:33,
+                 from /usr/local/include/vtk-6.3/vtkSystemIncludes.h:36,
+                 from /usr/local/include/vtk-6.3/vtkDebugLeaksManager.h:26,
+                 from /usr/local/include/vtk-6.3/vtkAutoInit.h:18,
+                 from /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h:40,
+                 from /usr/local/include/vtk-6.3/vtkCamera.h:29,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/ColorElevationMap.h:5,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/include/VolumeVisualisation.h:4,
+                 from /home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:1:
+/usr/include/c++/4.8/bits/basic_string.h:2753:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2753:5: note:   template argument deduction/substitution failed:
+/home/exopole/Documents/Projet/VTKProject/Cornee/src/VolumeVisualisation.cpp:204:49: note:   mismatched types ‘const std::basic_string<_CharT, _Traits, _Alloc>’ and ‘void’
+   std::cout << extremFacesMat2[countMat2].print()<< std::endl;
+                                                 ^
+make[2]: *** [CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Cornea.dir/all] Error 2
+make: *** [all] Error 2

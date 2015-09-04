@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/geometry.h
+cstdlib
+-
+cstdio
+-
+iostream
+-
+iomanip
+-
+cmath
+-
+
+/home/exopole/Documents/Projet/VTKProject/testCode/testIntersectRayTriangle2/src/raytri.cpp
+cstdio
+-
+cstdlib
+-
+memory
+-
+vector
+-
+utility
+-
+cstdint
+-
+iostream
+-
+fstream
+-
+cmath
+-
+limits
+-
+random
+-
+geometry.h
+/home/exopole/Documents/Projet/VTKProject/testCode/testIntersectRayTriangle2/src/geometry.h
+

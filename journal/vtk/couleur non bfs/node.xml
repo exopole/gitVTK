@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title</key><string>Couleur non BFS</string>
+  <key>nodeid</key><string>91f4cd76-ddf3-4f73-8533-3c0f98a3caeb</string>
+  <key>modified_time</key><integer>1440946200</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1440946137</integer>
+  <key>order</key><integer>2</integer>
+</dict>
+</node>

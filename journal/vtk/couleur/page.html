@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>New Page</title>
+</head><body>vtkLookupTable lut = new vtkLookupTable();<br/>
+lut.SetTableRange(0.0,6.0) <br/>
+lut.SetNumberOfColors(7); <br/>
+double opacity = 0.3; <br/>
+lut.SetTableValue(0, 0, 0, 1, opacity); <br/>
+lut.SetTableValue(1, 0, 1.0, 0, opacity); <br/>
+lut.SetTableValue(2, 0.6, 1.0, 0.0, opacity); <br/>
+lut.SetTableValue(3, 1.0, 1.0, 0.0, 0.7); <br/>
+lut.SetTableValue(4, 1.0, 0.8, 0.0, opacity); <br/>
+lut.SetTableValue(5, 1.0, 0.4, 0.0, opacity); <br/>
+lut.SetTableValue(6, 1.0, 0.0, 0.0, 1);<br/>
+<br/>
+<br/>
+lut.Build()<br/>
+<br/>
+&nbsp;mapper.SetLookupTable(lut) <br/>
+mapper.SetScalarVisibility(1) <br/>
+mapper.SetScalarRange(0.0,6.0)</body></html>

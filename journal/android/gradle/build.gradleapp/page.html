@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>build.gradle:app</title>
+</head><body>example : <br/>
+<br/>
+apply plugin: 'com.android.application'<br/>
+<br/>
+android {<br/>
+    compileSdkVersion 19<br/>
+    buildToolsVersion "19.0.0"<br/>
+<br/>
+    defaultConfig {<br/>
+        minSdkVersion 8<br/>
+        targetSdkVersion 19<br/>
+        versionCode 1<br/>
+        versionName "1.0"<br/>
+    }<br/>
+    buildTypes {<br/>
+        release {<br/>
+            minifyEnabled true<br/>
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'<br/>
+        }<br/>
+    }<br/>
+}<br/>
+<br/>
+dependencies {<br/>
+    compile project(":lib")<br/>
+    compile 'com.android.support:appcompat-v7:19.0.1'<br/>
+    compile fileTree(dir: 'libs', include: ['*.jar'])<br/>
+}</body></html>

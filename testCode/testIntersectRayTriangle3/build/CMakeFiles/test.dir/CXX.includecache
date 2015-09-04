@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Vecteur3D.h
+cstdlib
+-
+cstdio
+-
+iostream
+-
+iomanip
+-
+cmath
+-
+
+/home/exopole/Documents/Projet/VTKProject/testCode/testIntersectRayTriangle3/main.cpp
+Vecteur3D.h
+/home/exopole/Documents/Projet/VTKProject/testCode/testIntersectRayTriangle3/Vecteur3D.h
+cstdio
+-
+cstdlib
+-
+memory
+-
+vector
+-
+utility
+-
+iostream
+-
+fstream
+-
+cmath
+-
+limits
+-
+
