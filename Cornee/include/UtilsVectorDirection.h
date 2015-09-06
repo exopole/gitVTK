@@ -20,8 +20,19 @@ public:
                                     float &x, float &y,
                                     int direction,
                                     float valeurNull);
+    static bool next(std::vector<std::vector<float> > *matrice, 
+                                    Point *point,
+                                    int direction,
+                                    float valeurNull);
+    static void next(std::vector<std::vector<float> > *matrice, 
+                                    Point *pointPrec, Point *pointNext,
+                                    float valeurNull);
+
     static int findType(std::vector<std::vector<float> > *matrice, 
                         float x, float y,
+                        float valeurNull);
+    static int findType(std::vector<std::vector<float> > *matrice, 
+                        Point* point,
                         float valeurNull);
     static int findType(std::vector<std::vector<float> > *matrice, 
                         float x, float y, int direction,
@@ -40,6 +51,9 @@ public:
                                 float valeurNull);  
     static int findNextAndType(std::vector<std::vector<float> > *matrice, 
                             float &x, float &y, int direction,
+                            float valeurNull);  
+    static int findNextAndType(std::vector<std::vector<float> > *matrice, 
+                            Point *point, int direction,
                             float valeurNull);  
 };
 

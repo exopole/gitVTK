@@ -21,12 +21,11 @@ private:
 									std::vector<std::vector<float> >* matriceIndex, float &index);
 	void newScalar(std::vector<std::vector<float> >* matrice, float &index);
 	void newCells();
-	void newCellsVolume(std::vector<std::vector<float> >* matrice1, Point* beginMat1, 
-						std::vector<std::vector<float> >* matrice2, Point* beginMat2);
+	void newCellsVolume(std::vector<Point >* matrice1, std::vector<Point >* matrice2);
 	void createMapper();
 	bool pointInFace(std::vector< float > begin, std::vector< float > end, std::vector< float > point);
-	std::vector< Point > buildVectorOfExtremtyFace(Point* begin, std::vector<std::vector<float> >* matrice);
-	std::vector< Point > buildVectorOfExtremtyFace(Point* begin,Point* second, std::vector<std::vector<float> >* matrice);
+	bool sameSens(std::vector<Point >* matrice1, std::vector<Point >* matrice2);
+
 	Point findNextPoint(Point* point, std::vector<std::vector<float> > *matrice, 
 										int &direction, float valeurNull);
 	std::vector<std::vector<float> > anteriorContour;

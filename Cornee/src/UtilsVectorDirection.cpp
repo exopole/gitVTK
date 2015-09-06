@@ -85,11 +85,87 @@ bool UtilsVectorDirection::next(std::vector<std::vector<float> > *matrice,
     return true;
 }
 
+bool UtilsVectorDirection::next(std::vector<std::vector<float> > *matrice, 
+                                    Point *point,
+                                    int direction,
+                                    float valeurNull){
+    float x(point->getX()), y(point->getY());
+    if (direction == -1 && x > 0 && matrice->at(x-1)[y]!=valeurNull){
+        x--;
+        point->setCoordonne(x, y, matrice->at(x)[y]);
+
+    }
+    else if (direction == -2 && y > 0 && matrice->at(x)[y-1]!=valeurNull){
+        y--;
+        point->setCoordonne(x, y, matrice->at(x)[y]);
+    }
+    else if (direction == 2 && y < matrice->at(x).size()-1 && matrice->at(x)[y+1]!=valeurNull){
+        y++;
+        point->setCoordonne(x, y, matrice->at(x)[y]);
+    }
+    else if (direction == 1 && x < matrice->size()-1 && matrice->at(x+1)[y]!=valeurNull ){
+        x++;
+        point->setCoordonne(x, y, matrice->at(x)[y]);
+    }
+    else
+        return false;
+
+    return true;
+}
+
+void UtilsVectorDirection::next(std::vector<std::vector<float> > *matrice, 
+                                    Point *pointPrec, Point *pointNext,
+                                    float valeurNull){
+    float xPrec(pointPrec->getX()), yPrec(pointPrec->getY());
+    float x(pointNext->getX()), y(pointNext->getY());
+    if (x > 0 && xPrec != x-1 && matrice->at(x-1)[y]!=valeurNull){
+        x--;
+        pointPrec->copy(pointNext);
+        pointNext->setCoordonne(x, y, matrice->at(x)[y]);
+
+    }
+    else if (y > 0 && yPrec != y-1 && matrice->at(x)[y-1]!=valeurNull){
+        y--;
+        pointPrec->copy(pointNext);
+        pointNext->setCoordonne(x, y, matrice->at(x)[y]);
+    }
+    else if (y < matrice->at(x).size()-1 && yPrec != y+1 && matrice->at(x)[y+1]!=valeurNull){
+        y++;
+        pointPrec->copy(pointNext);
+        pointNext->setCoordonne(x, y, matrice->at(x)[y]);
+    }
+    else if (x < matrice->size()-1 && xPrec != x+1 && matrice->at(x+1)[y]!=valeurNull ){
+        x++;
+        pointPrec->copy(pointNext);
+        pointNext->setCoordonne(x, y, matrice->at(x)[y]);
+    }
+
+}
+
 
 int UtilsVectorDirection::findType(std::vector<std::vector<float> > *matrice, 
                                     float x, float y,
                                     float valeurNull)
 {
+    if (x > 0 && matrice->at(x-1)[y]!=valeurNull){
+        return -1;
+    }
+    else if (y > 0 && matrice->at(x)[y-1]!=valeurNull){
+        return -2;
+    }
+    else if (y < matrice->at(x).size()-1 && matrice->at(x)[y+1]!=valeurNull){
+        return 2;
+    }
+    else if (x < matrice->size()-1 && matrice->at(x+1)[y]!=valeurNull ){
+        return 1;
+    }
+}
+
+int UtilsVectorDirection::findType(std::vector<std::vector<float> > *matrice, 
+                                    Point *point,
+                                    float valeurNull)
+{
+    float x(point->getX()), y(point->getY());
     if (x > 0 && matrice->at(x-1)[y]!=valeurNull){
         return -1;
     }
@@ -114,10 +190,10 @@ int UtilsVectorDirection::findType(std::vector<std::vector<float> > *matrice,
     else if (direction != -2 && y > 0 && matrice->at(x)[y-1]!=valeurNull){
         return -2;
     }
-    else if (direction != 1 && y < matrice->at(x).size()-1 && matrice->at(x)[y+1]!=valeurNull){
+    else if (direction != 2 && y < matrice->at(x).size()-1 && matrice->at(x)[y+1]!=valeurNull){
         return 2;
     }
-    else if (direction != 2 && x < matrice->size()-1 && matrice->at(x+1)[y]!=valeurNull ){
+    else if (direction != 1 && x < matrice->size()-1 && matrice->at(x+1)[y]!=valeurNull ){
         return 1;
     }
 
@@ -251,6 +327,43 @@ int UtilsVectorDirection::findNextAndType(std::vector<std::vector<float> > *matr
     }
     else if (direction != 1 && x < matrice->size()-1  && matrice->at(x+1)[y]!=valeurNull ){
         x = x+1;
+        return 1;
+    }
+    else
+        return 0;
+}
+
+/**
+*\fn int UtilsVectorDirection::findDirection(std::vector<std::vector<float> > *matrice, 
+                                    int x, int y,
+                                    float valeurNull)
+*\brief find the next position 
+*\param vector 2D float pointeur 
+*\param int pointer => coordonate x y
+*\param float null value
+*/
+int UtilsVectorDirection::findNextAndType(std::vector<std::vector<float> > *matrice, 
+                                    Point* point, int direction,
+                                    float valeurNull){
+    float x(point->getX()), y(point->getY());
+    if (direction != -1 && x > 0 && matrice->at(x-1)[y]!=valeurNull){
+        x = x-1;
+        point->setCoordonne(x, y, matrice->at(x)[y]);
+        return -1;
+    }
+    else if (direction != -2 && y > 0  && matrice->at(x)[y-1]!=valeurNull){
+        y = y-1;
+        point->setCoordonne(x, y, matrice->at(x)[y]);
+        return -2;
+    }
+    else if (direction != 2 && y < matrice->at(x).size()-1  && matrice->at(x)[y+1]!=valeurNull){
+        y = y+1;
+        point->setCoordonne(x, y, matrice->at(x)[y]);
+        return 2;
+    }
+    else if (direction != 1 && x < matrice->size()-1  && matrice->at(x+1)[y]!=valeurNull ){
+        x = x+1;
+        point->setCoordonne(x, y, matrice->at(x)[y]);
         return 1;
     }
     else

@@ -12,6 +12,7 @@ class Point
 	public:
 		Point(float x,float y,float z);
 		Point(std::vector<float> coordonate);
+		Point(Point* Point);
 		Point();
 		virtual ~Point();
 		float getX();
@@ -28,6 +29,7 @@ class Point
 		bool isNotEqual(Point pointB);
 		bool isNull();
 		void copy(Point pointB);
+		void copy(Point *pointB);
 		void print();
 		std::string toString();
 		int findCoordPointeur(float &xP, float &yP, std::vector<std::vector<float> > * matrice, float valeurNull);

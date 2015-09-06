@@ -17,9 +17,9 @@ Point::Point(std::vector<float> coordonate)
 
 Point::Point(Point* point)
 {
-	this->x = point->getX ;
-	this->y = point->getY ;
-	this->z = point->getZ ;	
+	this->x = point->getX() ;
+	this->y = point->getY() ;
+	this->z = point->getZ() ;	
 }
 
 Point::Point()
@@ -109,6 +109,12 @@ void Point::copy(Point pointB)
 	z = pointB.getZ();
 }
 
+void Point::copy(Point *pointB)
+{
+	x = pointB->getX();
+	y = pointB->getY();
+	z = pointB->getZ();
+}
 
 void Point::print(){
 	std::cout << '[' << x << ' ' << y << ' ' << z << ']' << std::endl;

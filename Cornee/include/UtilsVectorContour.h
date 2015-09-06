@@ -25,6 +25,8 @@ public:
     static std::vector< std::vector<float> > getContour(std::vector<std::vector<float> > matrice, float valeurIgnore);
     
     static std::vector< std::vector<Point> > getContour(std::vector<std::vector<Point> > *matrice);
+    static std::vector<Point>  getCoordContourFromPoint(std::vector<std::vector<float> >* matrice, Point* begin,float valeurIgnore);
+
 protected:
 private:
 

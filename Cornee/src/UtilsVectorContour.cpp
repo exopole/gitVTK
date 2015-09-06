@@ -268,6 +268,36 @@ std::vector< std::vector<float> > UtilsVectorContour::getContour(std::vector<std
     return contour;
 }
 
+/**
+*\fn std::vector< std::vector<float> > UtilsVector::getContour(std::vector<std::vector<float> > matrice, float valeurIgnore)
+*\brief extract the outline
+*\param vector 2D of float
+*\param float value of the Null value
+*\return vector 2D of the outline
+*/
+std::vector<Point>  UtilsVectorContour::getCoordContourFromPoint(std::vector<std::vector<float> > *matrice, Point* begin,float valeurIgnore)
+{
+    std::vector<Point> result;
+
+    Point nextPoint(begin->getX(), begin->getY(), begin->getZ());
+    Point actuelPoint(begin->getX(), begin->getY(), begin->getZ());
+    int direction(0);
+    bool find = false;
+    result.push_back(nextPoint);
+    do{
+
+        UtilsVectorDirection::next(matrice, &actuelPoint, &nextPoint, valeurIgnore);
+        result.push_back(nextPoint);
+
+        if (begin->getX() == nextPoint.getX() && begin->getY() == nextPoint.getY())
+            find = true;
+
+    }
+    while(find == false);
+     
+    return result;
+}
+
 
 
 /**

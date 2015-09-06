@@ -13,14 +13,12 @@ VolumeVisualisation::VolumeVisualisation(std::vector<std::vector<float> > matric
 	UtilsVector::initVector(&matTest, 0, matriceAnt.size() );
 	anteriorContour = VolumeVisualisation::getContour(&matriceAnt);
 	posteriorContour = VolumeVisualisation::getContour(&matricePost);
-	UtilsVector::printVector(&anteriorContour, m_Null);
-	std::cout << "/////////////////" << std::endl;
-	UtilsVector::printVector(&posteriorContour, m_Null);
+	//UtilsVector::printVector(&anteriorContour, m_Null);
+	//std::cout << "/////////////////" << std::endl;
+	//UtilsVector::printVector(&posteriorContour, m_Null);
 	
 	pointsConfluence = UtilsVector::findPointWithLessDistance(&anteriorContour, &posteriorContour, m_Null);
-	nbrFA = UtilsVectorContour::numberOfFaces(&pointsConfluence[0], &anteriorContour,m_Null );
-	nbrFP = UtilsVectorContour::numberOfFaces(&pointsConfluence[1], &posteriorContour, m_Null );
-	Utils::simplificationFraction(nbrFA , nbrFP);
+
 	ColorElevationMap::newMap(); // attribute initialization
 	VolumeVisualisation::mapWithMatrice();
 	ColorElevationMap::createMapper();
@@ -140,18 +138,27 @@ void VolumeVisualisation::newScalar(std::vector<std::vector<float> >* matrice, f
 */
 void VolumeVisualisation::newCells()
 {
+	std::vector<Point> coordContourAnt, coordContourPost;
+	
+	Point beginAntIndex(&pointsConfluence[0]);
+	beginAntIndex.setZ(anteriorIndex[beginAntIndex.getX()][beginAntIndex.getY()]);
+	Point beginPostIndex(&pointsConfluence[1]);
+	beginPostIndex.setZ(anteriorIndex[beginPostIndex.getX()][beginPostIndex.getY()]);
 
-	if (nbrFA > nbrFP)
+	coordContourAnt = UtilsVectorContour::getCoordContourFromPoint(&anteriorIndex, &beginAntIndex, indexNull);
+	coordContourPost = UtilsVectorContour::getCoordContourFromPoint(&posteriorIndex, &beginPostIndex, indexNull);
+
+	if (coordContourAnt.size() > coordContourPost.size())
 	{
-		VolumeVisualisation::newCellsVolume(&anteriorIndex,&pointsConfluence[0], &posteriorIndex, &pointsConfluence[1]);
+		VolumeVisualisation::newCellsVolume(&coordContourAnt,&coordContourPost);
 	}
-	else if (nbrFA < nbrFP)
+	else if (coordContourAnt.size() < coordContourPost.size())
 	{
-		VolumeVisualisation::newCellsVolume(&posteriorIndex, &pointsConfluence[1], &anteriorIndex,&pointsConfluence[0]);
+		VolumeVisualisation::newCellsVolume(&coordContourPost,&coordContourAnt);
 	}
 	else 
 	{
-		VolumeVisualisation::newCellsVolume(&posteriorIndex, &pointsConfluence[1], &anteriorIndex,&pointsConfluence[0]);
+		VolumeVisualisation::newCellsVolume(&coordContourAnt,&coordContourPost);
 	}
 }
 
@@ -160,57 +167,49 @@ void VolumeVisualisation::newCells()
 *\brief create new cells for the mesh
 *\param matrice of index where -1 => value null
 */
-void VolumeVisualisation::newCellsVolume(std::vector<std::vector<float> >* matrice1, Point* beginMat1, 
-									std::vector<std::vector<float> >* matrice2, Point* beginMat2)
+void VolumeVisualisation::newCellsVolume(std::vector<Point >* matrice1,	std::vector<Point >* matrice2)
 {
 
-	std::vector<Point> extremFacesMat1, extremFacesMat2;
 	int count(0), countMat2(0), i;
-	extremFacesMat1 = VolumeVisualisation::buildVectorOfExtremtyFace(beginMat1, matrice1);
-	extremFacesMat2 = VolumeVisualisation::buildVectorOfExtremtyFace(beginMat2, matrice2);
 
-	int nbrFMatrice1 = extremFacesMat1.size();
-	int nbrFMatrice2 = extremFacesMat2.size();
-	Utils::simplificationFraction(nbrFMatrice1 , nbrFMatrice2);
-	std::cout << "coucou2 : " << extremFacesMat1.size() << std::endl;
-	std::cout << "coucou2 : " << extremFacesMat2.size() << std::endl;
-	std::cout << "simplification " << nbrFMatrice1 << ", " << nbrFMatrice2 << std::endl;
-	UtilsVector::printVector(&extremFacesMat1);
-	std::cout << " ////////////////::" << std::endl;
-	UtilsVector::printVector(&extremFacesMat2);
-	for (i = 0; i < extremFacesMat1.size()-1; i++)
+
+	int division =  matrice1->size() / (matrice1->size() - matrice2->size());
+	int iterateur;
+	int fin;
+
+	if (VolumeVisualisation::sameSens(matrice1, matrice2))
 	{
-		std::cout << "countMat2 : " << countMat2 << std::endl;
-		ColorElevationMap::addTriangle(matrice1->at(extremFacesMat1[i].getX())[extremFacesMat1[i].getY()],
-										matrice1->at(extremFacesMat1[i+1].getX())[extremFacesMat1[i+1].getY()],
-										matrice2->at(extremFacesMat2[countMat2].getX())[extremFacesMat2[countMat2].getY()]);
-		if (count < nbrFMatrice2 && countMat2 < extremFacesMat2.size()-1)
+		iterateur = 1;
+		fin = matrice2->size()-2;
+	}
+	else{
+		countMat2 = matrice2->size()-1;
+		iterateur = -1;
+		fin = 2;
+	}
+
+
+	for (i = 0; i < matrice1->size()-1; i++)
+	{
+		ColorElevationMap::addTriangle(matrice1->at(i).getZ(),
+										matrice1->at(i+1).getZ(),
+										matrice2->at(countMat2).getZ());
+		if (countMat2 != fin && i % division != 0)
 		{
-			ColorElevationMap::addTriangle(matrice2->at(extremFacesMat2[countMat2].getX())[extremFacesMat2[countMat2].getY()],
-										matrice2->at(extremFacesMat2[countMat2+1].getX())[extremFacesMat2[countMat2+1].getY()],
-										matrice1->at(extremFacesMat1[i+1].getX())[extremFacesMat1[i+1].getY()]);
-			countMat2++;
+			ColorElevationMap::addTriangle(matrice2->at(countMat2).getZ(),
+										matrice2->at(countMat2+iterateur).getZ(),
+										matrice1->at(i+1).getZ());
+			countMat2 += iterateur;
 		}
 
 
-		if (count == nbrFMatrice1+1){
-			count = 0;
-		}
-		else 
-			count++;
+
 
 	}
-	std::cout << "coucou2 : " << countMat2 << std::endl;
-	std::cout << "coucou2 : " << i << std::endl;
-	std::cout << "simplification " << nbrFMatrice1 << ", " << nbrFMatrice2 << std::endl;
 
-	ColorElevationMap::addTriangle(matrice2->at(extremFacesMat2[countMat2].getX())[extremFacesMat2[countMat2].getY()],
-										matrice2->at(extremFacesMat2[countMat2+1].getX())[extremFacesMat2[countMat2+1].getY()],
-										matrice1->at(extremFacesMat1[i].getX())[extremFacesMat1[i].getY()]);
-	std::cout << "coucou3" << std::endl;
-
-
-
+	ColorElevationMap::addTriangle(matrice2->at(countMat2).getZ(),
+										matrice2->at(countMat2+iterateur).getZ(),
+										matrice1->at(i).getZ());
 }
 
 
@@ -240,71 +239,9 @@ std::vector<std::vector<float> > VolumeVisualisation::getContour(std::vector<std
 	return UtilsVectorContour::getContour(matrice,m_Null);
 }
 
-/**
-*\fn std::vector<std::vector<float> > getContour(std::vector<std::vector<float> > *matrice)
-*\brief Build a point vector of all faces extremity 
-*\param vector float => begin point
-*\param 2D vector float 
-*\return point vector
-*/
-std::vector< Point > VolumeVisualisation::buildVectorOfExtremtyFace(Point* begin, std::vector<std::vector<float> >* matrice)
-{
-	std::vector<Point> result;
-	Point actuel = *begin;
-	Point next;
-	bool fin = false;
-	int direction(0);
-	result.push_back(begin);
-	do{
-		next = VolumeVisualisation::findNextPoint(actuel, matrice, direction, indexNull);
-		if (result.size() > 1 && VolumeVisualisation::pointInFace(actuel, next, begin) )
-		{
-			next = begin;
-			fin = true;
-		}
 
-		result.push_back(next);
-		actuel = next;
-	}
-	while(fin == false);
 
-	return result;
-}
 
-/**
-*\fn std::vector<std::vector<float> > getContour(std::vector<std::vector<float> > *matrice)
-*\brief Build a point vector of all faces extremity 
-*\param vector float => begin point
-*\param 2D vector float 
-*\return point vector
-*/
-std::vector< Point > VolumeVisualisation::buildVectorOfExtremtyFace(Point* begin, Point *second, std::vector<std::vector<float> >* matrice)
-{
-	std::vector<Point> result;
-	Point actuel(begin);
-	Point next;
-	bool fin = false;
-	int direction(0);
-	result.push_back(actuel);
-	
-
-	
-
-	do{
-		next = VolumeVisualisation::findNextPoint(actuel, matrice, direction, indexNull);
-		if (result.size() > 1 && VolumeVisualisation::pointInFace(actuel, next, begin) )
-		{
-			next = begin;
-			fin = true;
-		}
-
-		result.push_back(next);
-		actuel = next;
-	}
-	while(fin == false);
-
-	return result;
-}
 
 /**
 *\fn std::vector< float > VolumeVisualisation::findNextPoint(std::vector< float > point, std::vector<std::vector<float> > *matrice,
@@ -313,15 +250,15 @@ std::vector< Point > VolumeVisualisation::buildVectorOfExtremtyFace(Point* begin
 *\param 2 2D vector float (anterior surface, posterior surface)
 *\param valeurIgnore
 */
-Point VolumeVisualisation::findNextPoint(std::vector< float > point, std::vector<std::vector<float> > *matrice,
+Point VolumeVisualisation::findNextPoint(Point* point, std::vector<std::vector<float> > *matrice,
 													 int &direction, float valeurNull)
 {
 
 	Point nextPoint;
-	float x(point[0]), y(point[1]);
+	float x(point->getX()), y(point->getY());
 
 	if (direction == 0)
-		direction = UtilsVectorDirection::findType(matrice, point[0], point[1], valeurNull);
+		direction = UtilsVectorDirection::findType(matrice, x, y, valeurNull);
 	else
 		direction = UtilsVectorDirection::findNextAndType(matrice, x, y, -direction, valeurNull);
 
@@ -338,6 +275,13 @@ bool VolumeVisualisation::pointInFace(std::vector< float > begin, std::vector< f
 		return (point[1] <= end[1] && point[1] >= begin[1]) || (point[1] >= end[1] && point[1] <= begin[1]);
 	if (begin[1] == point[1])
 		return (point[0] <= end[0] && point[0] >= begin[0]) || (point[0] >= end[0] && point[0] <= begin[0]);
+}
+
+
+bool VolumeVisualisation::sameSens(std::vector<Point >* matrice1, std::vector<Point >* matrice2)
+{
+	return UtilsGeometry::distanceBetween3DPoint(&(matrice1->at(matrice1->size()/4)), &(matrice2->at(matrice1->size()/4)) ) < 
+		   UtilsGeometry::distanceBetween3DPoint(&(matrice1->at(matrice1->size()/4)), &(matrice2->at(3*matrice1->size()/4)) ) ;
 }
 
 
