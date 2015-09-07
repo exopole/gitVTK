@@ -1,28 +1,31 @@
 #include <iostream>
 
-// include these define if you don't use cmake
-#include <vtkAutoInit.h>
-#define VTK_MODULE_INIT(vtkRenderingOpenGL);
 
-#define vtkRenderingCore_AUTOINIT 4(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingFreeTypeOpenGL,vtkRenderingOpenGL)
-#define vtkRenderingVolume_AUTOINIT 1(vtkRenderingVolumeOpenGL)
-
-
-#include "ColoredElevationMap.h"
-#include "AfficherCube.h"
 #include "AfficherCarre.h"
-
+#include "AfficherCarreCTF.h"
 
 
 using namespace std;
 
 int main()
 {
-    //ColoredElevationMap::visualisation();
-   //AfficherCube::cube1();
+
+	float cR[35] = {180, 160, 140, 120, 100,  60,  40,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 220, 200, 180, 160, 140, 120, 100};
+	float cG[35] = {  0,   0,   0,   0,   0,   0,  20,  75,  93, 112, 131, 150, 169, 188, 207, 226, 245, 220, 245, 223, 201, 179, 157, 134, 112,  90,  68,  45,   0,   0,  20,  40,  60,  60,  60};
+	float cB[35] = {175, 175, 175, 175, 175, 200, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,  40,  60,  80, 100, 100, 100};
+
+	float R[35] = {198, 189, 180, 170, 149, 130, 100,  80,  39,  40,  40,  39,  29, 14,   0,   0,   0,  19,  90, 141, 240, 254, 220, 219, 220, 220, 219, 200, 180, 160, 140, 170, 200, 220, 230};
+	float G[35] = {106,  80,  59,  39,  40,  40,  40,  39,   0,   0,  60, 100, 120, 159, 189, 210, 240, 210, 229, 245, 254, 231, 199, 170, 141, 110,  80, 50,  0,   0,  59,  80, 100, 119, 140};
+	float B[35] = {247, 240, 220, 200, 179, 159, 159, 140, 150, 189, 220, 219, 241, 240, 240, 240, 240,  80,   0,   0,   0,   0,   0,   0,   0,   0,   0, 0,   0,   0,  59,  80, 100, 119, 141};
+
+
+
+	/*
    AfficherCarre newCarre;
-    newCarre.carre1();
-    AfficherCarre newCarre2;
-    newCarre2.carre2();
+   newCarre.visualization();
+   */
+   AfficherCarreCTF newCarre(cR,cG,cB);
+   newCarre.visualization();
+
     return 0;
 }

@@ -1,5 +1,5 @@
-#ifndef AFFICHERCARRE_H
-#define AFFICHERCARRE_H
+#ifndef AFFICHERCARRECTF_H
+#define AFFICHERCARRECTF_H
 
 
 #include "vector"
@@ -19,12 +19,14 @@
 #include <vtkScalarBarActor.h>
 #include <vtkSmartPointer.h>
 
+#include "AfficherCarre.h"
 
-class AfficherCarre
+class AfficherCarreCTF
 {
-    public:
-        AfficherCarre();
-        virtual ~AfficherCarre();
+public:
+	AfficherCarreCTF();
+	AfficherCarreCTF(float R[35], float G[35], float B[35]);
+	~AfficherCarreCTF();
         void carre();
       //  void carre3();
         void visualization();
@@ -34,16 +36,17 @@ class AfficherCarre
         void scalarBarBuild(vtkPolyDataMapper *carreMapper);
 
         void coloration();
-
+        void coloration(float R[35],float G[35],float B[35]);
         vtkPolyData *m_carre;
         vtkPoints *m_points;
         vtkCellArray *m_polys;
         vtkFloatArray *m_scalars;
         vtkSmartPointer<vtkScalarBarActor> scalarBar;
-        vtkSmartPointer<vtkLookupTable> colorLookupTable;
+        vtkSmartPointer<vtkLookupTable> lut;
         std::vector<std::vector<float> > matrice;
     private:
 
+	
 };
 
-#endif // AFFICHERCARRE_H
+#endif

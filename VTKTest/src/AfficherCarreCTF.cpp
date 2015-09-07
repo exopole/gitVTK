@@ -1,17 +1,31 @@
-#include "AfficherCarre.h"
+#include "AfficherCarreCTF.h" 
 
-AfficherCarre::AfficherCarre()
+
+AfficherCarreCTF::AfficherCarreCTF()
 {
        // We'll create the building blocks of polydata including data attributes.
     m_carre = vtkPolyData::New();
     m_points = vtkPoints::New();
     m_polys = vtkCellArray::New();
     m_scalars = vtkFloatArray::New();
-    AfficherCarre::carre();
-    AfficherCarre::maillageTriangleFromVectorMatrice(matrice);
+    AfficherCarreCTF::carre();
+    AfficherCarreCTF::maillageTriangleFromVectorMatrice(matrice);
+    AfficherCarreCTF::coloration();
 }
 
-void AfficherCarre::carre()
+AfficherCarreCTF::AfficherCarreCTF(float R[35], float G[35], float B[35])
+{
+       // We'll create the building blocks of polydata including data attributes.
+    m_carre = vtkPolyData::New();
+    m_points = vtkPoints::New();
+    m_polys = vtkCellArray::New();
+    m_scalars = vtkFloatArray::New();
+    AfficherCarreCTF::carre();
+    AfficherCarreCTF::maillageTriangleFromVectorMatrice(matrice);
+    AfficherCarreCTF::coloration(R,G,B);
+}
+
+void AfficherCarreCTF::carre()
 {
     std::cout << "step 1 "<< std::endl;
 
@@ -30,7 +44,8 @@ void AfficherCarre::carre()
 
 
 
-void AfficherCarre::maillageTriangleFromVectorMatrice(std::vector<std::vector<float> > matrice )
+
+void AfficherCarreCTF::maillageTriangleFromVectorMatrice(std::vector<std::vector<float> > matrice )
 {
     int i = 0;
     float matSize = (float) matrice.size();
@@ -57,27 +72,42 @@ void AfficherCarre::maillageTriangleFromVectorMatrice(std::vector<std::vector<fl
 }
 
 
-void AfficherCarre::scalarBarBuild(vtkPolyDataMapper *carreMapper)
+void AfficherCarreCTF::scalarBarBuild(vtkPolyDataMapper *carreMapper)
 {
     scalarBar = vtkSmartPointer<vtkScalarBarActor>::New();
     scalarBar->SetLookupTable( carreMapper->GetLookupTable());
     scalarBar->SetTitle("Palette");
-    scalarBar->SetNumberOfLabels(5);
+    scalarBar->SetNumberOfLabels(11);
 }
 
-void AfficherCarre::coloration(){
+void AfficherCarreCTF::coloration(){
     
-    colorLookupTable = vtkSmartPointer<vtkLookupTable>::New();
-    colorLookupTable->SetTableRange(-75,75);
-    colorLookupTable->SetHueRange(0.0, 0.667);
-    colorLookupTable->SetNumberOfColors(35);
-    colorLookupTable->Build();
+    lut = vtkSmartPointer<vtkLookupTable>::New();
+     lut->SetTableRange(0, 3); 
+    lut->SetNumberOfColors(3); 
+    lut->Build(); 
+    lut->SetTableValue(0, 1, 0, 0, 1); 
+    lut->SetTableValue(1, 0, 1, 0, 1); 
+    lut->SetTableValue(2, 0, 0, 1, 1); 
+    
+
+}
+void AfficherCarreCTF::coloration(float R[35], float G[35], float B[35]){
+    
+    lut = vtkSmartPointer<vtkLookupTable>::New();
+     lut->SetTableRange(0,35); 
+    lut->SetNumberOfColors(35); 
+    lut->Build(); 
+    for (int i = 0; i < 35; i++)
+    {
+    	lut->SetTableValue(i, R[i]/255, G[i]/255, B[i]/255); 
+    }
     
 
 }
 
 
-void AfficherCarre::visualization()
+void AfficherCarreCTF::visualization()
 {
         // We now assign the pieces to the vtkPolyData.
     m_carre->SetPoints(m_points);
@@ -88,9 +118,8 @@ void AfficherCarre::visualization()
     vtkPolyDataMapper *carreMapper = vtkPolyDataMapper::New();
     carreMapper->SetInputData(m_carre);
     carreMapper->SetScalarRange(-75,75);
-    AfficherCarre::coloration();
-    carreMapper->SetLookupTable(colorLookupTable);
-    AfficherCarre::scalarBarBuild(carreMapper);
+    carreMapper->SetLookupTable(lut);
+    AfficherCarreCTF::scalarBarBuild(carreMapper);
 
     vtkActor *carreActor = vtkActor::New();
     carreActor->SetMapper(carreMapper);
@@ -130,7 +159,8 @@ void AfficherCarre::visualization()
     iren->Delete();
 }
 
-AfficherCarre::~AfficherCarre()
+AfficherCarreCTF::~AfficherCarreCTF()
 {
     //dtor
 }
+
