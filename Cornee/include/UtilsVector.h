@@ -13,7 +13,7 @@ class UtilsVector
         UtilsVector();
         virtual ~UtilsVector();
 
-        
+        static std::vector< std::vector<float> > initVector(  float value , int size );
         static void initVector(std::vector< std::vector <bool>  > * v, bool value, int size );
         static void initVector(std::vector< std::vector <float> > * v, float value, int size );
         static void initVector(std::vector< std::vector <Point> > * v, int size );
@@ -30,6 +30,7 @@ class UtilsVector
         static void printVector(std::vector<std::vector<float> > vecteur, float valeurNull);
         static void printVector(std::vector<std::vector<Point> > *vecteur, int type);
         static void printVector(std::vector<std::vector<Point> > vecteur, int type);
+        static void printVectorNonNull(std::vector<std::vector<Point> > vecteur);
         static void printVector(std::vector<float > *vecteur);
         static void printVector(std::vector<float > vecteur);
         static void printVector(std::vector<Point> * vecteur);

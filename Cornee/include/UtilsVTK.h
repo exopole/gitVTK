@@ -23,6 +23,9 @@ class UtilsVTK
         static void readVTPfile(std::string namefile);
         static void visualisation(vtkSmartPointer<vtkActor> actor);
         static void visualisation(vtkSmartPointer<vtkActor> actor, vtkSmartPointer<vtkActor> actor2);
+        static void visualisation(vtkSmartPointer<vtkActor> actor, vtkSmartPointer<vtkActor> actor2, vtkSmartPointer<vtkActor> actor3);
+        static void visualisation(std::vector <vtkSmartPointer<vtkActor> > vecteurActor );
+
     protected:
     private:
 };

@@ -7,6 +7,7 @@ class SurfaceElevationFromMatrice : public ColorElevationMap
 {
     public:
         SurfaceElevationFromMatrice(std::vector<std::vector<float> > matrice, float valeurIgnore);
+        SurfaceElevationFromMatrice();
         virtual ~SurfaceElevationFromMatrice();
     protected:
       void mapWithMatrice(std::vector<std::vector<float> >* matrice, float valueIgnore);

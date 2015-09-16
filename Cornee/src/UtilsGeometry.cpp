@@ -158,6 +158,13 @@ int UtilsGeometry::intersect_triangle(double orig[3], double dir[3],
                    double vert0[3], double vert1[3], double vert2[3],
                    double *t, double *u, double *v)
 {
+/*
+  std::cout << "vert0 : "<< vert0[0] << ", " <<vert0[1] << ", " << vert0[2] << std::endl;
+  std::cout <<"vert1 : "<<  vert1[0] << ", " <<vert1[1] << ", " << vert1[2] << std::endl;
+  std::cout <<"vert2 : "<<  vert2[0] << ", " <<vert2[1] << ", " << vert2[2] << std::endl;
+  std::cout << "orig : "<< orig[0] << ", " <<orig[1] << ", " << orig[2] << std::endl;
+  std::cout << "dir : "<< dir[0] << ", " <<dir[1] << ", " << dir[2] << std::endl;
+*/
    double edge1[3], edge2[3], tvec[3], pvec[3], qvec[3];
    double det, inv_det;
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.7)  3 SEP 2015 11:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.7)  16 SEP 2015 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -401,43 +401,64 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen131
 \Gm@dimlist=\toks22
 )
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen132
+)
+(/usr/share/texlive/texmf-dist/tex/latex/emp/emp.sty
+Package: emp 1997/11/12 v1.00 Encapsulated MetaPost LaTeX Package (ohl)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks23
+\verbatim@line=\toks24
+\verbatim@in@stream=\read1
+)
+\@outemp=\write3
+\c@empfig=\count108
+\emp@TeX=\toks25
+\emp@prelude=\toks26
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
 (./rapportLatex_modifAL.aux)
 \openout1 = `rapportLatex_modifAL.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Info: Redefining \degres on input line 16.
-LaTeX Info: Redefining \dots on input line 16.
-LaTeX Info: Redefining \up on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Info: Redefining \degres on input line 24.
+LaTeX Info: Redefining \dots on input line 24.
+LaTeX Info: Redefining \up on input line 24.
 
 
 Package frenchb.ldf Warning: OT1 encoding should not be used for French. 
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(frenchb.ldf)                of your document, on input line 16.
+(frenchb.ldf)                of your document, on input line 24.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen132
+\scratchcounter=\count109
+\scratchdimen=\dimen133
 \scratchbox=\box28
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen133
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks24
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen134
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -519,228 +540,467 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+<amu.png, id=1, 1289.2968pt x 441.8106pt>
+File: amu.png Graphic file (type png)
+ <use amu.png>
+Package pdftex.def Info: amu.png used on input line 30.
+(pdftex.def)             Requested size: 113.81102pt x 38.99945pt.
+
+<logoUDEM.png, id=3, 140.80605pt x 53.84116pt>
+File: logoUDEM.png Graphic file (type png)
+ <use logoUDEM.png>
+Package pdftex.def Info: logoUDEM.png used on input line 34.
+(pdftex.def)             Requested size: 113.81102pt x 43.51906pt.
+
+Overfull \hbox (2.61105pt too wide) in paragraph at lines 29--36
+[][] [] 
+ []
+
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./rapportLatex_modifAL.toc)
-\tf@toc=\write3
-\openout3 = `rapportLatex_modifAL.toc'.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./amu.png> <./logoUDEM.png
+>] [2] (./rapportLatex_modifAL.toc)
+\tf@toc=\write4
+\openout4 = `rapportLatex_modifAL.toc'.
 
- [2]
-Overfull \hbox (1.29094pt too wide) in paragraph at lines 26--27
+ [3]
+Overfull \hbox (1.29094pt too wide) in paragraph at lines 71--72
 []\OT1/cmr/m/n/12 Durant ce stage, j'ai pu int^^Segrer l'^^Sequipe du DIRO di-r
 ig^^Se par Jean Meu-nier. Il s'int^^Seresse
  []
 
 Package epstopdf Info: Source file: <oeil.eps>
-(epstopdf)                    date: 2015-09-02 14:20:24
-(epstopdf)                    size: 899054 bytes
+(epstopdf)                    date: 2015-09-15 14:37:14
+(epstopdf)                    size: 899052 bytes
 (epstopdf)             Output file: <oeil-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-02 14:37:33
-(epstopdf)                    size: 55360 bytes
+(epstopdf)                    date: 2015-09-15 14:37:59
+(epstopdf)                    size: 55356 bytes
 (epstopdf)             Command: <repstopdf --outfile=oeil-eps-converted-to.pdf 
 oeil.eps>
-(epstopdf)             \includegraphics on input line 35.
+(epstopdf)             \includegraphics on input line 80.
 Package epstopdf Info: Output file is already uptodate.
-<oeil-eps-converted-to.pdf, id=12, 369.38pt x 225.84375pt>
+<oeil-eps-converted-to.pdf, id=19, 369.38pt x 225.84375pt>
 File: oeil-eps-converted-to.pdf Graphic file (type pdf)
 
 <use oeil-eps-converted-to.pdf>
-Package pdftex.def Info: oeil-eps-converted-to.pdf used on input line 35.
-(pdftex.def)             Requested size: 372.30995pt x 227.62204pt.
- [3 <./oeil-eps-converted-to.pdf>]
+Package pdftex.def Info: oeil-eps-converted-to.pdf used on input line 80.
+(pdftex.def)             Requested size: 426.79134pt x 260.94853pt.
+ [1 <./oeil-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Vision.eps>
-(epstopdf)                    date: 2015-09-02 12:49:08
+(epstopdf)                    date: 2015-09-02 18:49:08
 (epstopdf)                    size: 4206124 bytes
 (epstopdf)             Output file: <Vision-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-02 12:58:36
+(epstopdf)                    date: 2015-09-02 18:58:36
 (epstopdf)                    size: 121255 bytes
 (epstopdf)             Command: <repstopdf --outfile=Vision-eps-converted-to.pd
 f Vision.eps>
-(epstopdf)             \includegraphics on input line 44.
+(epstopdf)             \includegraphics on input line 89.
 Package epstopdf Info: Output file is already uptodate.
 
-<Vision-eps-converted-to.pdf, id=21, 722.7pt x 542.025pt>
+<Vision-eps-converted-to.pdf, id=28, 722.7pt x 542.025pt>
 File: Vision-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Vision-eps-converted-to.pdf>
-Package pdftex.def Info: Vision-eps-converted-to.pdf used on input line 44.
+Package pdftex.def Info: Vision-eps-converted-to.pdf used on input line 89.
 (pdftex.def)             Requested size: 379.37907pt x 284.52756pt.
- [4 <./Vision-eps-converted-to.pdf>]
+ [2 <./Vision-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <CorneePresentation.eps>
-(epstopdf)                    date: 2015-09-02 14:20:24
+(epstopdf)                    date: 2015-09-02 20:20:24
 (epstopdf)                    size: 1590496 bytes
 (epstopdf)             Output file: <CorneePresentation-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-02 14:37:35
+(epstopdf)                    date: 2015-09-02 20:37:35
 (epstopdf)                    size: 67719 bytes
 (epstopdf)             Command: <repstopdf --outfile=CorneePresentation-eps-con
 verted-to.pdf CorneePresentation.eps>
-(epstopdf)             \includegraphics on input line 67.
+(epstopdf)             \includegraphics on input line 117.
 Package epstopdf Info: Output file is already uptodate.
 
-<CorneePresentation-eps-converted-to.pdf, id=28, 592.2125pt x 443.6575pt>
+<CorneePresentation-eps-converted-to.pdf, id=35, 592.2125pt x 443.6575pt>
 File: CorneePresentation-eps-converted-to.pdf Graphic file (type pdf)
 
 <use CorneePresentation-eps-converted-to.pdf>
 Package pdftex.def Info: CorneePresentation-eps-converted-to.pdf used on input 
-line 67.
-(pdftex.def)             Requested size: 426.79134pt x 258.22127pt.
- [5 <./CorneePresentation-eps-converted-to.pdf>]
+line 117.
+(pdftex.def)             Requested size: 455.24408pt x 275.43748pt.
+ [3 <./CorneePresentation-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Obscan.eps>
-(epstopdf)                    date: 2015-09-02 14:20:24
+(epstopdf)                    date: 2015-09-02 20:20:24
 (epstopdf)                    size: 1716094 bytes
 (epstopdf)             Output file: <Obscan-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-02 14:37:36
+(epstopdf)                    date: 2015-09-02 20:37:36
 (epstopdf)                    size: 71174 bytes
 (epstopdf)             Command: <repstopdf --outfile=Obscan-eps-converted-to.pd
 f Obscan.eps>
-(epstopdf)             \includegraphics on input line 82.
+(epstopdf)             \includegraphics on input line 132.
 Package epstopdf Info: Output file is already uptodate.
- <Obscan-eps-converted-to.pdf, id=38, 652.4375pt x 434.62375pt>
+ <Obscan-eps-converted-to.pdf, id=45, 652.4375pt x 434.62375pt>
 File: Obscan-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Obscan-eps-converted-to.pdf>
-Package pdftex.def Info: Obscan-eps-converted-to.pdf used on input line 82.
-(pdftex.def)             Requested size: 341.43306pt x 227.45139pt.
+Package pdftex.def Info: Obscan-eps-converted-to.pdf used on input line 132.
+(pdftex.def)             Requested size: 284.52756pt x 189.54391pt.
 Package epstopdf Info: Source file: <orbscanPrincipes.eps>
-(epstopdf)                    date: 2015-09-02 14:20:24
+(epstopdf)                    date: 2015-09-02 20:20:24
 (epstopdf)                    size: 149406 bytes
 (epstopdf)             Output file: <orbscanPrincipes-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-02 15:37:13
+(epstopdf)                    date: 2015-09-02 21:37:13
 (epstopdf)                    size: 19660 bytes
 (epstopdf)             Command: <repstopdf --outfile=orbscanPrincipes-eps-conve
 rted-to.pdf orbscanPrincipes.eps>
-(epstopdf)             \includegraphics on input line 83.
+(epstopdf)             \includegraphics on input line 133.
 Package epstopdf Info: Output file is already uptodate.
 
-<orbscanPrincipes-eps-converted-to.pdf, id=39, 421.575pt x 157.58875pt>
+<orbscanPrincipes-eps-converted-to.pdf, id=46, 421.575pt x 157.58875pt>
 File: orbscanPrincipes-eps-converted-to.pdf Graphic file (type pdf)
 
 <use orbscanPrincipes-eps-converted-to.pdf>
 Package pdftex.def Info: orbscanPrincipes-eps-converted-to.pdf used on input li
-ne 83.
-(pdftex.def)             Requested size: 341.43306pt x 127.63414pt.
- [6 <./Obscan-eps-converted-to.pdf> <./orbscanPrincipes-eps-converted-to.pdf>]
+ne 133.
+(pdftex.def)             Requested size: 284.52756pt x 106.36058pt.
+ [4 <./Obscan-eps-converted-to.pdf> <./orbscanPrincipes-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <bfs.eps>
-(epstopdf)                    date: 2015-09-02 12:50:23
+(epstopdf)                    date: 2015-09-13 11:16:40
 (epstopdf)                    size: 3975382 bytes
 (epstopdf)             Output file: <bfs-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-02 12:58:03
+(epstopdf)                    date: 2015-09-13 11:17:07
 (epstopdf)                    size: 383106 bytes
 (epstopdf)             Command: <repstopdf --outfile=bfs-eps-converted-to.pdf b
 fs.eps>
-(epstopdf)             \includegraphics on input line 105.
+(epstopdf)             \includegraphics on input line 156.
 Package epstopdf Info: Output file is already uptodate.
 
-<bfs-eps-converted-to.pdf, id=49, 881.2925pt x 746.79pt>
+<bfs-eps-converted-to.pdf, id=57, 881.2925pt x 746.79pt>
 File: bfs-eps-converted-to.pdf Graphic file (type pdf)
 
 <use bfs-eps-converted-to.pdf>
-Package pdftex.def Info: bfs-eps-converted-to.pdf used on input line 105.
-(pdftex.def)             Requested size: 128.0374pt x 108.49258pt.
+Package pdftex.def Info: bfs-eps-converted-to.pdf used on input line 156.
+(pdftex.def)             Requested size: 113.81102pt x 96.43658pt.
 Package epstopdf Info: Source file: <carteElevation.eps>
-(epstopdf)                    date: 2015-09-02 12:50:22
+(epstopdf)                    date: 2015-09-13 11:16:38
 (epstopdf)                    size: 6229310 bytes
 (epstopdf)             Output file: <carteElevation-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-02 12:58:09
+(epstopdf)                    date: 2015-09-13 11:17:12
 (epstopdf)                    size: 284340 bytes
 (epstopdf)             Command: <repstopdf --outfile=carteElevation-eps-convert
 ed-to.pdf carteElevation.eps>
-(epstopdf)             \includegraphics on input line 106.
+(epstopdf)             \includegraphics on input line 157.
 Package epstopdf Info: Output file is already uptodate.
 
-<carteElevation-eps-converted-to.pdf, id=50, 1011.78pt x 1019.81pt>
+<carteElevation-eps-converted-to.pdf, id=58, 1011.78pt x 1019.81pt>
 File: carteElevation-eps-converted-to.pdf Graphic file (type pdf)
 
 <use carteElevation-eps-converted-to.pdf>
 Package pdftex.def Info: carteElevation-eps-converted-to.pdf used on input line
- 106.
-(pdftex.def)             Requested size: 128.0374pt x 129.04759pt.
+ 157.
+(pdftex.def)             Requested size: 113.81102pt x 114.70033pt.
 Package epstopdf Info: Source file: <carteElevationcouleur.eps>
-(epstopdf)                    date: 2015-09-02 12:50:23
+(epstopdf)                    date: 2015-09-13 11:16:40
 (epstopdf)                    size: 2589078 bytes
 (epstopdf)             Output file: <carteElevationcouleur-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2015-09-02 12:58:12
+(epstopdf)                    date: 2015-09-13 11:17:14
 (epstopdf)                    size: 68956 bytes
 (epstopdf)             Command: <repstopdf --outfile=carteElevationcouleur-eps-
 converted-to.pdf carteElevationcouleur.eps>
-(epstopdf)             \includegraphics on input line 107.
+(epstopdf)             \includegraphics on input line 158.
 Package epstopdf Info: Output file is already uptodate.
 
-<carteElevationcouleur-eps-converted-to.pdf, id=51, 653.44125pt x 655.44875pt>
+<carteElevationcouleur-eps-converted-to.pdf, id=59, 653.44125pt x 655.44875pt>
 File: carteElevationcouleur-eps-converted-to.pdf Graphic file (type pdf)
 
 <use carteElevationcouleur-eps-converted-to.pdf>
 Package pdftex.def Info: carteElevationcouleur-eps-converted-to.pdf used on inp
-ut line 107.
-(pdftex.def)             Requested size: 128.0374pt x 128.42706pt.
+ut line 158.
+(pdftex.def)             Requested size: 113.81102pt x 114.15517pt.
 Package epstopdf Info: Source file: <pallette.eps>
-(epstopdf)                    date: 2015-09-02 12:50:22
+(epstopdf)                    date: 2015-09-13 11:16:39
 (epstopdf)                    size: 59638 bytes
 (epstopdf)             Output file: <pallette-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-02 12:58:12
+(epstopdf)                    date: 2015-09-13 11:17:14
 (epstopdf)                    size: 5583 bytes
 (epstopdf)             Command: <repstopdf --outfile=pallette-eps-converted-to.
 pdf pallette.eps>
-(epstopdf)             \includegraphics on input line 108.
+(epstopdf)             \includegraphics on input line 159.
 Package epstopdf Info: Output file is already uptodate.
 
-<pallette-eps-converted-to.pdf, id=52, 49.18375pt x 181.67876pt>
+<pallette-eps-converted-to.pdf, id=60, 49.18375pt x 181.67876pt>
 File: pallette-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pallette-eps-converted-to.pdf>
-Package pdftex.def Info: pallette-eps-converted-to.pdf used on input line 108.
+Package pdftex.def Info: pallette-eps-converted-to.pdf used on input line 159.
 (pdftex.def)             Requested size: 30.81105pt x 113.81102pt.
- [7 <./bfs-eps-converted-to.pdf> <./carteElevation-eps-converted-to.pdf> <./car
-teElevationcouleur-eps-converted-to.pdf> <./pallette-eps-converted-to.pdf>] [8]
+ [5 <./bfs-eps-converted-to.pdf> <./carteElevation-eps-converted-to.pdf> <./car
+teElevationcouleur-eps-converted-to.pdf> <./pallette-eps-converted-to.pdf>] [6]
 
-Overfull \hbox (8.80666pt too wide) in paragraph at lines 138--139
+Overfull \hbox (8.80666pt too wide) in paragraph at lines 190--191
 []\OT1/cmr/m/n/12 Pour r^^Sealiser la vi-sua-li-sa-tion en 3D de la corn^^See, 
 je me suis servi des ma-trices repr^^Sesentant
  []
 
-[9]
+[7]
+Overfull \hbox (0.72006pt too wide) in paragraph at lines 204--206
+\OT1/cmr/m/n/12 met-tra la repr^^Sesentation sous forme de cou-leurs. Ici nous 
+uti-li-se-rons les va-leurs d'^^Sel^^Sevations.
+ []
+
+Package epstopdf Info: Source file: <maillage.eps>
+(epstopdf)                    date: 2015-09-13 11:16:39
+(epstopdf)                    size: 767063 bytes
+(epstopdf)             Output file: <maillage-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-09-13 11:17:15
+(epstopdf)                    size: 47094 bytes
+(epstopdf)             Command: <repstopdf --outfile=maillage-eps-converted-to.
+pdf maillage.eps>
+(epstopdf)             \includegraphics on input line 225.
+Package epstopdf Info: Output file is already uptodate.
+<maillage-eps-converted-to.pdf, id=86, 481.8pt x 261.97874pt>
+File: maillage-eps-converted-to.pdf Graphic file (type pdf)
+
+<use maillage-eps-converted-to.pdf>
+Package pdftex.def Info: maillage-eps-converted-to.pdf used on input line 225.
+(pdftex.def)             Requested size: 284.52756pt x 154.71402pt.
+ [8 <./maillage-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <VTKMeth.eps>
-(epstopdf)                    date: 2015-09-03 01:56:18
-(epstopdf)                    size: 146050 bytes
+(epstopdf)                    date: 2015-09-13 11:16:41
+(epstopdf)                    size: 3043938 bytes
 (epstopdf)             Output file: <VTKMeth-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-03 01:56:18
-(epstopdf)                    size: 50858 bytes
+(epstopdf)                    date: 2015-09-13 11:17:17
+(epstopdf)                    size: 44617 bytes
 (epstopdf)             Command: <repstopdf --outfile=VTKMeth-eps-converted-to.p
 df VTKMeth.eps>
-(epstopdf)             \includegraphics on input line 161.
+(epstopdf)             \includegraphics on input line 266.
 Package epstopdf Info: Output file is already uptodate.
- <VTKMeth-eps-converted-to.pdf, id=79, 905.3825pt x 558.085pt>
+
+<VTKMeth-eps-converted-to.pdf, id=93, 874.26625pt x 576.1525pt>
 File: VTKMeth-eps-converted-to.pdf Graphic file (type pdf)
 
 <use VTKMeth-eps-converted-to.pdf>
-Package pdftex.def Info: VTKMeth-eps-converted-to.pdf used on input line 161.
-(pdftex.def)             Requested size: 426.79134pt x 263.07492pt.
- [10 <./VTKMeth-eps-converted-to.pdf>]
-[11] [12] [13] [14] [15] (./rapportLatex_modifAL.aux) ) 
+Package pdftex.def Info: VTKMeth-eps-converted-to.pdf used on input line 266.
+(pdftex.def)             Requested size: 426.79134pt x 281.26222pt.
+ [9 <./VTKMeth-eps-converted-to.pdf>]
+[10] <DataCornee.png, id=104, 275.52937pt x 63.98906pt>
+File: DataCornee.png Graphic file (type png)
+ <use DataCornee.png>
+Package pdftex.def Info: DataCornee.png used on input line 331.
+(pdftex.def)             Requested size: 227.62204pt x 52.86484pt.
+
+<ParserTopos.png, id=105, 587.19376pt x 302.63063pt>
+File: ParserTopos.png Graphic file (type png)
+ <use ParserTopos.png>
+Package pdftex.def Info: ParserTopos.png used on input line 342.
+(pdftex.def)             Requested size: 426.79134pt x 219.96263pt.
+
+[11 <./DataCornee.png> <./ParserTopos.png>]
+<ColorElevationMap.png, id=109, 347.79938pt x 257.46187pt>
+File: ColorElevationMap.png Graphic file (type png)
+
+<use ColorElevationMap.png>
+Package pdftex.def Info: ColorElevationMap.png used on input line 361.
+(pdftex.def)             Requested size: 284.52756pt x 210.63295pt.
+
+<SurfaceElevationFromMatrice.png, id=110, 555.57562pt x 118.19156pt>
+File: SurfaceElevationFromMatrice.png Graphic file (type png)
+
+<use SurfaceElevationFromMatrice.png>
+Package pdftex.def Info: SurfaceElevationFromMatrice.png used on input line 370
+.
+(pdftex.def)             Requested size: 426.79134pt x 90.79497pt.
+
+<SurfaceScalarFromMatrice.png, id=111, 720.44156pt x 53.44969pt>
+File: SurfaceScalarFromMatrice.png Graphic file (type png)
+
+<use SurfaceScalarFromMatrice.png>
+Package pdftex.def Info: SurfaceScalarFromMatrice.png used on input line 380.
+(pdftex.def)             Requested size: 512.1496pt x 37.99602pt.
+
+Overfull \hbox (56.90549pt too wide) in paragraph at lines 380--381
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<VolumeVisualisation.png, id=112, 710.655pt x 214.55156pt>
+File: VolumeVisualisation.png Graphic file (type png)
+
+<use VolumeVisualisation.png>
+Package pdftex.def Info: VolumeVisualisation.png used on input line 388.
+(pdftex.def)             Requested size: 512.1496pt x 154.62431pt.
+
+Overfull \hbox (56.90549pt too wide) in paragraph at lines 388--389
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<heritage.png, id=113, 645.41125pt x 303.1325pt>
+File: heritage.png Graphic file (type png)
+ <use heritage.png>
+Package pdftex.def Info: heritage.png used on input line 400.
+(pdftex.def)             Requested size: 426.79134pt x 200.45198pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <./ColorElevationMap.png> <./SurfaceElevationFromMatrice.png>]
+Package epstopdf Info: Source file: <AntScalarBar.eps>
+(epstopdf)                    date: 2015-09-13 11:16:40
+(epstopdf)                    size: 562786 bytes
+(epstopdf)             Output file: <AntScalarBar-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-09-13 11:17:35
+(epstopdf)                    size: 35190 bytes
+(epstopdf)             Command: <repstopdf --outfile=AntScalarBar-eps-converted
+-to.pdf AntScalarBar.eps>
+(epstopdf)             \includegraphics on input line 416.
+Package epstopdf Info: Output file is already uptodate.
+
+<AntScalarBar-eps-converted-to.pdf, id=117, 338.26375pt x 273.02pt>
+File: AntScalarBar-eps-converted-to.pdf Graphic file (type pdf)
+
+<use AntScalarBar-eps-converted-to.pdf>
+Package pdftex.def Info: AntScalarBar-eps-converted-to.pdf used on input line 4
+16.
+(pdftex.def)             Requested size: 284.52756pt x 229.656pt.
+Package epstopdf Info: Source file: <PostScalarBar.eps>
+(epstopdf)                    date: 2015-09-13 11:16:40
+(epstopdf)                    size: 580634 bytes
+(epstopdf)             Output file: <PostScalarBar-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-09-13 11:17:36
+(epstopdf)                    size: 36412 bytes
+(epstopdf)             Command: <repstopdf --outfile=PostScalarBar-eps-converte
+d-to.pdf PostScalarBar.eps>
+(epstopdf)             \includegraphics on input line 419.
+Package epstopdf Info: Output file is already uptodate.
+
+<PostScalarBar-eps-converted-to.pdf, id=118, 384.43625pt x 247.92625pt>
+File: PostScalarBar-eps-converted-to.pdf Graphic file (type pdf)
+
+<use PostScalarBar-eps-converted-to.pdf>
+Package pdftex.def Info: PostScalarBar-eps-converted-to.pdf used on input line 
+419.
+(pdftex.def)             Requested size: 284.52756pt x 183.50795pt.
+Package epstopdf Info: Source file: <FaceAntPost.eps>
+(epstopdf)                    date: 2015-09-13 11:16:39
+(epstopdf)                    size: 224737 bytes
+(epstopdf)             Output file: <FaceAntPost-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-09-13 11:17:37
+(epstopdf)                    size: 10478 bytes
+(epstopdf)             Command: <repstopdf --outfile=FaceAntPost-eps-converted-
+to.pdf FaceAntPost.eps>
+(epstopdf)             \includegraphics on input line 422.
+Package epstopdf Info: Output file is already uptodate.
+
+<FaceAntPost-eps-converted-to.pdf, id=119, 252.945pt x 143.53625pt>
+File: FaceAntPost-eps-converted-to.pdf Graphic file (type pdf)
+
+<use FaceAntPost-eps-converted-to.pdf>
+Package pdftex.def Info: FaceAntPost-eps-converted-to.pdf used on input line 42
+2.
+(pdftex.def)             Requested size: 284.52756pt x 161.46034pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 <./SurfaceScalarFromMatrice.png> <./VolumeVisualisation.png> <./heritage.pn
+g>] [14 <./AntScalarBar-eps-converted-to.pdf> <./PostScalarBar-eps-converted-to
+.pdf> <./FaceAntPost-eps-converted-to.pdf>]
+<contour.png, id=136, 1505.625pt x 189.70876pt>
+File: contour.png Graphic file (type png)
+ <use contour.png>
+Package pdftex.def Info: contour.png used on input line 444.
+(pdftex.def)             Requested size: 512.1496pt x 76.02689pt.
+
+Overfull \hbox (56.90549pt too wide) in paragraph at lines 444--445
+ [][] 
+ []
+
+[15 <./contour.png>] <volumeSchema.png, id=143, 1505.625pt x 1003.75pt>
+File: volumeSchema.png Graphic file (type png)
+
+<use volumeSchema.png>
+Package pdftex.def Info: volumeSchema.png used on input line 461.
+(pdftex.def)             Requested size: 426.79134pt x 198.08498pt.
+ <volume.png, id=145, 278.03876pt x 263.98625pt>
+File: volume.png Graphic file (type png)
+
+<use volume.png>
+Package pdftex.def Info: volume.png used on input line 471.
+(pdftex.def)             Requested size: 227.62204pt x 216.11967pt.
+ <resumeActor.png, id=146, 264.99pt x 132.495pt>
+File: resumeActor.png Graphic file (type png)
+
+<use resumeActor.png>
+Package pdftex.def Info: resumeActor.png used on input line 477.
+(pdftex.def)             Requested size: 284.52756pt x 142.27365pt.
+ <volume2.png, id=147, 269.005pt x 249.93375pt>
+File: volume2.png Graphic file (type png)
+
+<use volume2.png>
+Package pdftex.def Info: volume2.png used on input line 478.
+(pdftex.def)             Requested size: 284.52756pt x 264.35646pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16 <./volumeSchema.png (PNG copy)> <./volume.png>] [17 <./resumeActor.png> <./
+volume2.png>] <Kiwi.png, id=156, 318.18875pt x 321.2pt>
+File: Kiwi.png Graphic file (type png)
+ <use Kiwi.png>
+Package pdftex.def Info: Kiwi.png used on input line 501.
+(pdftex.def)             Requested size: 142.26378pt x 143.60745pt.
+ [18 <./Kiwi.png>] [19] [20] [21] [22] [23] (./rapportLatex_modifAL.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 10--13
+[]\OT1/cmr/m/n/12 Ben Boe-ckel Dave De-Marle.  Vtk 6.2.0, mars 2015.
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 15--18
+[]\OT1/cmr/m/n/12 Candemir Do-ger.  Confi-gu-ring ves for eclipse and ndk-build
+, aout 2013.
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 20--23
+[]\OT1/cmr/m/n/12 Gilles Ca-mus Ga-brielle Bon-net.  Les d^^Sefauts de la vi-si
+on, sep-tembre 2004.
+ []
+
+
+Underfull \hbox (badness 7777) in paragraph at lines 40--43
+[]\OT1/cmr/m/n/12 Benbourahla Ma-zim.  In-tro-duc-tion au ndk sous an-droid, ma
+rs 2013.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
+[]\OT1/cmr/m/n/12 Tim Thi-rion.  Buil-ding vtk for mo-bile ar-chi-tec-tures, ma
+rs 2015.
+ []
+
+) [24] (./rapportLatex_modifAL.aux) ) 
 Here is how much of TeX's memory you used:
- 4771 strings out of 493304
- 70289 string characters out of 6139872
- 145500 words of memory out of 5000000
- 8156 multiletter control sequences out of 15000+600000
- 11181 words of font info for 40 fonts, out of 8000000 for 9000
+ 5061 strings out of 493304
+ 74981 string characters out of 6139872
+ 150002 words of memory out of 5000000
+ 8407 multiletter control sequences out of 15000+600000
+ 11835 words of font info for 42 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,7n,38p,1134b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on rapportLatex_modifAL.pdf (15 pages, 1250349 bytes).
+ 38i,7n,38p,1135b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on rapportLatex_modifAL.pdf (27 pages, 2026859 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 214 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 164 words of extra memory for PDF output out of 10000 (max. 10000000)
 

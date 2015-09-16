@@ -232,6 +232,7 @@ void VolumeVisualisation::createMapper()
 *\param 2 2D vector float (anterior surface, posterior surface)
 */
 std::vector<std::vector<float> > VolumeVisualisation::getContour(std::vector<std::vector<float> > *matrice){
+	UtilsVector::printVector(matrice, 99.9);
 	UtilsVectorContour::eraseLine(matrice, 3, m_Null);
 	UtilsVectorContour::eraseArmContour(matrice, m_Null );
 	UtilsVectorContour::fillHoleInMatrice(matrice,m_Null);

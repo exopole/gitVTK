@@ -104,6 +104,22 @@ void ColorElevationMap::createMapper()
     m_mapper->SetScalarRange(m_minScal, m_maxScal);
 }
 
+
+
+void ColorElevationMap::setLookUpTable(float R[35], float G[35], float B[35]){
+    
+    lut = vtkLookupTable::New();
+    lut->SetTableRange(0,35); 
+    lut->SetNumberOfColors(35); 
+    lut->Build(); 
+    for (int i = 0; i < 35; i++)
+    {
+      lut->SetTableValue(i, R[i]/255, G[i]/255, B[i]/255); 
+    }
+    m_mapper->SetLookupTable(lut);
+
+}
+
 /*!
 *\fn vtkPolyData* ColorElevationMap::getPolyData()
 *\brief get the polydata of the map
@@ -229,6 +245,58 @@ void ColorElevationMap::writeData(std::string namefile)
 {
     UtilsVTK::writeVTPfile(namefile, m_polyData);
 }
+
+void ColorElevationMap::scalarBarBuild()
+{
+    scalarBar = vtkSmartPointer<vtkScalarBarActor>::New();
+    scalarBar->SetLookupTable( m_mapper->GetLookupTable());
+    scalarBar->SetTitle("Palette (µm)");
+    scalarBar->SetNumberOfLabels(11);
+}
+
+
+void ColorElevationMap::visualisation()
+{
+
+  
+  vtkSmartPointer<vtkRenderer> renderer = vtkSmartPointer<vtkRenderer>::New();
+  vtkSmartPointer<vtkRenderWindow> renderWindow = vtkSmartPointer<vtkRenderWindow>::New();
+  renderWindow->AddRenderer(renderer);
+  vtkSmartPointer<vtkRenderWindowInteractor> renderWindowInteractor =  vtkSmartPointer<vtkRenderWindowInteractor>::New();
+  renderWindowInteractor->SetRenderWindow(renderWindow);
+
+  renderer->AddActor(m_actor);
+  renderer->SetBackground(1, 1,1); // Background color green
+
+  renderWindow->Render();
+  renderWindowInteractor->Start();
+
+}
+
+
+void ColorElevationMap::visualisationWithScalarBar()
+{
+
+  ColorElevationMap::scalarBarBuild();
+  vtkSmartPointer<vtkRenderer> renderer = vtkSmartPointer<vtkRenderer>::New();
+  vtkSmartPointer<vtkRenderWindow> renderWindow = vtkSmartPointer<vtkRenderWindow>::New();
+  renderWindow->AddRenderer(renderer);
+  vtkSmartPointer<vtkRenderWindowInteractor> renderWindowInteractor =  vtkSmartPointer<vtkRenderWindowInteractor>::New();
+  renderWindowInteractor->SetRenderWindow(renderWindow);
+
+  renderer->AddActor(m_actor);
+
+  renderer->AddActor(scalarBar);
+  renderer->SetBackground(0, 0,0); // Background color green
+
+  renderWindow->Render();
+  renderWindow->SetSize(400,300);
+  renderWindowInteractor->Start();
+
+}
+
+
+
 
 ColorElevationMap::~ColorElevationMap()
 {

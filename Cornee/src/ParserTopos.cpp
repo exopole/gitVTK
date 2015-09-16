@@ -361,9 +361,9 @@ std::vector<std::vector<float> > ParserTopos::getPachymetry()
 *\brief give the coordinate of the center of the BFS anterior
 *\return vector of float: x, y, z center of the bfs anterior
 */
-Point* ParserTopos::getCoordBFSAnterior()
+Point ParserTopos::getCoordBFSAnterior()
 {
-    return &(coordBFSAnterior);
+    return coordBFSAnterior;
 }
 
 /***
@@ -371,9 +371,9 @@ Point* ParserTopos::getCoordBFSAnterior()
 *\brief give the coordinate of the center of the BFS posterior
 *\return vector of float: x, y, z center of the bfs posterior
 */
-Point* ParserTopos::getCoordBFSPosterior()
+Point ParserTopos::getCoordBFSPosterior()
 {
-    return &(coordBFSPosterior);
+    return coordBFSPosterior;
 }
 
 /**
@@ -389,9 +389,9 @@ float ParserTopos::getRadiusBFSPosterior()
     return radiusBFSPosterior;
 }
 
-std::vector<float>* ParserTopos::getCoordXY()
+std::vector<float> ParserTopos::getCoordXY()
 {
-    return &coordXY;
+    return coordXY;
 }
 
 ParserTopos::~ParserTopos()

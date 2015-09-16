@@ -86,6 +86,15 @@ void Triangle::setAllX(std::vector<float> * coordX){
 	V2->setX(coordX->at(V2->getX()));
 }
 
+
+void Triangle::setAllX(std::vector<float> coordX){
+
+	V0->setX(coordX[V0->getX()]);
+	V1->setX(coordX[V1->getX()]);
+	V2->setX(coordX[V2->getX()]);
+}
+
+
 void Triangle::setAllY(float value, int type){
 	if (type == 1)
 	{
@@ -113,6 +122,13 @@ void Triangle::setAllY(std::vector<float> * coordY){
 	V0->setY(coordY->at(V0->getY()));
 	V1->setY(coordY->at(V1->getY()));
 	V2->setY(coordY->at(V2->getY()));
+}
+
+void Triangle::setAllY(std::vector<float> coordY){
+
+	V0->setY(coordY[V0->getY()]);
+	V1->setY(coordY[V1->getY()]);
+	V2->setY(coordY[V2->getY()]);
 }
 
 void Triangle::print(){
@@ -188,6 +204,11 @@ bool Triangle::findTriangleFromMatriceAndV0(Point * V0, std::vector<std::vector<
 	this->setCoordonne(V0,V1,V2);
 	
 	return V1Find == 1 && V2Find == 1 ;
+}
+
+bool Triangle::containZValue(float value)
+{
+	return V0->getZ() == value || V1->getZ() == value || V2->getZ() == value;
 }
 
 

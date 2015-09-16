@@ -2,7 +2,7 @@
 <node>
 <version>6</version>
 <dict>
-  <key>expanded</key><false/>
+  <key>expanded</key><true/>
   <key>title</key><string>android</string>
   <key>nodeid</key><string>a088c0d3-e814-40aa-a390-eaf01e6a3e5b</string>
   <key>modified_time</key><integer>1439227153</integer>

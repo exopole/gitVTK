@@ -21,8 +21,16 @@ vtkPoints.h
 ../include/vtkPoints.h
 UtilsVTK.h
 ../include/UtilsVTK.h
+vtkLookupTable.h
+-
+vtkScalarBarActor.h
+-
+vtkSmartPointer.h
+-
 UtilsVector.h
 ../include/UtilsVector.h
+math.h
+../include/math.h
 
 ../include/DataCornee.h
 iostream
@@ -368,6 +376,14 @@ vtkRenderingCoreModule.h
 vtkProp3D.h
 /usr/local/include/vtk-6.3/vtkProp3D.h
 
+/usr/local/include/vtk-6.3/vtkActor2D.h
+vtkRenderingCoreModule.h
+/usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+vtkProp.h
+/usr/local/include/vtk-6.3/vtkProp.h
+vtkCoordinate.h
+/usr/local/include/vtk-6.3/vtkCoordinate.h
+
 /usr/local/include/vtk-6.3/vtkActorCollection.h
 vtkRenderingCoreModule.h
 /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
@@ -519,6 +535,12 @@ vtkDebugLeaksManager.h
 /usr/local/include/vtk-6.3/vtkConfigure.h
 vtkVersionMacros.h
 /usr/local/include/vtk-6.3/vtkVersionMacros.h
+
+/usr/local/include/vtk-6.3/vtkCoordinate.h
+vtkRenderingCoreModule.h
+/usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+vtkObject.h
+/usr/local/include/vtk-6.3/vtkObject.h
 
 /usr/local/include/vtk-6.3/vtkDataArray.h
 vtkCommonCoreModule.h
@@ -722,6 +744,14 @@ vtkDataArray.h
 vtkDataArrayTemplate.h
 /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
 
+/usr/local/include/vtk-6.3/vtkLookupTable.h
+vtkCommonCoreModule.h
+/usr/local/include/vtk-6.3/vtkCommonCoreModule.h
+vtkScalarsToColors.h
+/usr/local/include/vtk-6.3/vtkScalarsToColors.h
+vtkUnsignedCharArray.h
+/usr/local/include/vtk-6.3/vtkUnsignedCharArray.h
+
 /usr/local/include/vtk-6.3/vtkMappedDataArray.h
 vtkTypedDataArray.h
 /usr/local/include/vtk-6.3/vtkTypedDataArray.h
@@ -862,9 +892,35 @@ vtkVolumeCollection.h
 vtkActorCollection.h
 /usr/local/include/vtk-6.3/vtkActorCollection.h
 
+/usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
+vtkRenderingFreeTypeModule.h
+/usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+
 /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
 vtkAutoInit.h
 /usr/local/include/vtk-6.3/vtkAutoInit.h
+
+/usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+vtkRenderingCoreModule.h
+/usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+vtkRenderingCoreModule.h
+/usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+vtkAutoInit.h
+/usr/local/include/vtk-6.3/vtkAutoInit.h
+
+/usr/local/include/vtk-6.3/vtkScalarBarActor.h
+vtkRenderingAnnotationModule.h
+/usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
+vtkActor2D.h
+/usr/local/include/vtk-6.3/vtkActor2D.h
+
+/usr/local/include/vtk-6.3/vtkScalarsToColors.h
+vtkCommonCoreModule.h
+/usr/local/include/vtk-6.3/vtkCommonCoreModule.h
+vtkVariant.h
+/usr/local/include/vtk-6.3/vtkVariant.h
+vtkObject.h
+/usr/local/include/vtk-6.3/vtkObject.h
 
 /usr/local/include/vtk-6.3/vtkSetGet.h
 vtkCommonCoreModule.h

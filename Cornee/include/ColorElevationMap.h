@@ -9,10 +9,16 @@
 #include "vtkPointData.h"
 #include "vtkPoints.h"
 #include "UtilsVTK.h"
+#include <vtkLookupTable.h>
+#include <vtkScalarBarActor.h>
+#include <vtkSmartPointer.h>
+
+
 
 
 //include utils
 #include "UtilsVector.h"
+#include "math.h"
 
 class ColorElevationMap
 {
@@ -26,6 +32,10 @@ class ColorElevationMap
       void setPolys(vtkCellArray * polygone);
       void setScalar(vtkFloatArray * scalars);
       void setMapper(vtkPolyDataMapper* mapper);
+      void setLookUpTable(float R[35], float G[35], float B[35]);
+      void visualisation();
+      void visualisationWithScalarBar();
+      void scalarBarBuild();
       vtkPoints * getPoints();
       vtkFloatArray * getScalar();
       vtkCellArray * getPolys();
@@ -45,6 +55,8 @@ class ColorElevationMap
       vtkFloatArray *m_scalars;
       vtkPolyDataMapper *m_mapper;
       vtkActor *m_actor;
+      vtkLookupTable* lut;
+      vtkSmartPointer<vtkScalarBarActor> scalarBar;
       float m_nombrePoint;
       float m_minScal;
       float m_maxScal;

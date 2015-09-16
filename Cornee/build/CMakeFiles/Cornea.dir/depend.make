@@ -31,6 +31,7 @@ CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractArray.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractMapper.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractMapper3D.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkActor.h
+CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkActor2D.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkActorCollection.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkAlgorithm.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkArrayIterator.h
@@ -54,6 +55,7 @@ CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkCommonDataModelM
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkCommonInformationKeyManager.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkConfigure.h
+CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkCoordinate.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkDataArray.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkDataArrayTemplate.txx
@@ -79,6 +81,7 @@ CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkInformationInfor
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkInformationKey.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkInformationVector.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkIntArray.h
+CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkLookupTable.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkMappedDataArray.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkMappedDataArray.txx
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkMapper.h
@@ -98,7 +101,11 @@ CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkPropCollection.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkRenderWindow.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkRenderWindowInteractor.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkRenderer.h
+CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkScalarBarActor.h
+CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkScalarsToColors.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkSetGet.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkSmartPointer.h
 CMakeFiles/Cornea.dir/main.cpp.o: /usr/local/include/vtk-6.3/vtkSmartPointerBase.h
@@ -157,6 +164,7 @@ CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vt
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractMapper.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractMapper3D.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkActor.h
+CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkActor2D.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkActorCollection.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkAlgorithm.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkArrayIterator.h
@@ -180,6 +188,7 @@ CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vt
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkCommonInformationKeyManager.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkConfigure.h
+CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkCoordinate.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkDataArray.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkDataArrayTemplate.txx
@@ -205,6 +214,7 @@ CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vt
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkInformationKey.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkInformationVector.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkIntArray.h
+CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkLookupTable.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkMappedDataArray.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkMappedDataArray.txx
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkMapper.h
@@ -224,7 +234,11 @@ CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vt
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkRenderWindow.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkRenderWindowInteractor.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkRenderer.h
+CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkScalarBarActor.h
+CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkScalarsToColors.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkSetGet.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkSmartPointer.h
 CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o: /usr/local/include/vtk-6.3/vtkSmartPointerBase.h
@@ -315,6 +329,7 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractMapper.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractMapper3D.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkActor.h
+CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkActor2D.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkActorCollection.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkAlgorithm.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkArrayIterator.h
@@ -338,6 +353,7 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkCommonInformationKeyManager.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkConfigure.h
+CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkCoordinate.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkDataArray.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkDataArrayTemplate.txx
@@ -363,6 +379,7 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkInformationKey.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkInformationVector.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkIntArray.h
+CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkLookupTable.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkMappedDataArray.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkMappedDataArray.txx
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkMapper.h
@@ -382,7 +399,11 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkRenderWindow.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkRenderWindowInteractor.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkRenderer.h
+CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkScalarBarActor.h
+CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkScalarsToColors.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkSetGet.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkSmartPointer.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkSmartPointerBase.h
@@ -442,6 +463,7 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/i
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractMapper.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractMapper3D.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkActor.h
+CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkActor2D.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkActorCollection.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkAlgorithm.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkArrayIterator.h
@@ -465,6 +487,7 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/i
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkCommonInformationKeyManager.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkConfigure.h
+CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkCoordinate.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkDataArray.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkDataArrayTemplate.txx
@@ -490,6 +513,7 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/i
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkInformationKey.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkInformationVector.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkIntArray.h
+CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkLookupTable.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkMappedDataArray.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkMappedDataArray.txx
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkMapper.h
@@ -509,7 +533,11 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/i
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderWindow.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderWindowInteractor.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderer.h
+CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkScalarBarActor.h
+CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkScalarsToColors.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkSetGet.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkSmartPointer.h
 CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkSmartPointerBase.h
@@ -596,6 +624,7 @@ CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractMapper.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractMapper3D.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkActor.h
+CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkActor2D.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkActorCollection.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkAlgorithm.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkArrayIterator.h
@@ -619,6 +648,7 @@ CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkCommonInformationKeyManager.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkConfigure.h
+CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkCoordinate.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkDataArray.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkDataArrayTemplate.txx
@@ -644,6 +674,7 @@ CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkInformationKey.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkInformationVector.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkIntArray.h
+CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkLookupTable.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkMappedDataArray.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkMappedDataArray.txx
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkMapper.h
@@ -663,7 +694,11 @@ CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderWindow.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderWindowInteractor.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderer.h
+CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkScalarBarActor.h
+CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkScalarsToColors.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkSetGet.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkSmartPointer.h
 CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkSmartPointerBase.h
@@ -724,6 +759,7 @@ CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractMapper.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractMapper3D.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkActor.h
+CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkActor2D.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkActorCollection.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkAlgorithm.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkArrayIterator.h
@@ -747,6 +783,7 @@ CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkCommonInformationKeyManager.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkConfigure.h
+CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkCoordinate.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkDataArray.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkDataArrayTemplate.txx
@@ -772,6 +809,7 @@ CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkInformationKey.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkInformationVector.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkIntArray.h
+CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkLookupTable.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkMappedDataArray.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkMappedDataArray.txx
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkMapper.h
@@ -791,7 +829,11 @@ CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderWindow.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderWindowInteractor.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderer.h
+CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkScalarBarActor.h
+CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkScalarsToColors.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkSetGet.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkSmartPointer.h
 CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o: /usr/local/include/vtk-6.3/vtkSmartPointerBase.h
@@ -1035,6 +1077,7 @@ CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractMapper.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkAbstractMapper3D.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkActor.h
+CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkActor2D.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkActorCollection.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkAlgorithm.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkArrayIterator.h
@@ -1058,6 +1101,7 @@ CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkCommonInformationKeyManager.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkConfigure.h
+CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkCoordinate.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkDataArray.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkDataArrayTemplate.txx
@@ -1083,6 +1127,7 @@ CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkInformationKey.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkInformationVector.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkIntArray.h
+CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkLookupTable.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkMappedDataArray.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkMappedDataArray.txx
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkMapper.h
@@ -1102,7 +1147,11 @@ CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkRenderWindow.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkRenderWindowInteractor.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkRenderer.h
+CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkScalarBarActor.h
+CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkScalarsToColors.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkSetGet.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkSmartPointer.h
 CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o: /usr/local/include/vtk-6.3/vtkSmartPointerBase.h

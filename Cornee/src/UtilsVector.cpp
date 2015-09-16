@@ -48,6 +48,28 @@ void UtilsVector::initVector(std::vector< std::vector<float> > *v, float value ,
     }
 }
 
+
+/**
+*\fn void UtilsVector::initVector(std::vector< std::vector<float> > &v,bool value, int size )
+*\brief initialize a float vector with a value 
+*\param vecteur 2D of float
+*\param value
+*\param size of the vector
+*/
+std::vector< std::vector<float> > UtilsVector::initVector(  float value , int size ){
+    std::vector< std::vector<float> > v;
+    std::vector<float> tmp;
+    for (int x = 0; x < size; x++)
+    {
+        for (int y = 0; y < size; y++)
+            tmp.push_back(value);
+
+        v.push_back(tmp);
+        tmp.clear();
+    }
+    return v;
+}
+
 /**
 *\fn void UtilsVector::initVector(std::vector< std::vector<bool> > &v,bool value, int size )
 *\brief initialize a Point vector 
@@ -351,6 +373,22 @@ void UtilsVector::printVector(std::vector<std::vector<Point> > vecteur, int type
 
         }
         std::cout << std::endl;
+    }
+}
+
+/*!
+* \fn void UtilsVector::printFloatVector(std::vector<std::vector<Point> > vecteur)
+* \param vecteur of Point vector
+* \brief print all the data from a vector of Point vector
+* \
+*/
+void UtilsVector::printVectorNonNull(std::vector<std::vector<Point> > vecteur)
+{
+    for (int x = 0; x< (int) vecteur.size(); x++)
+    {
+        for (int y = 0; y< (int) vecteur[x].size(); y++)
+            if (! vecteur[x][y].isNull())
+                std::cout << "[" << vecteur[x][y].getX() << ", " << vecteur[x][y].getY()  << ", " << vecteur[x][y].getZ() << "]" << std::endl;
     }
 }
 

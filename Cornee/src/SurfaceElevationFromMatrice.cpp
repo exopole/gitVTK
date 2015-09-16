@@ -25,6 +25,17 @@ SurfaceElevationFromMatrice::SurfaceElevationFromMatrice(std::vector<std::vector
 }
 
 /*!
+* \fn SurfaceElevationFromMatrice::ColorElevationMap(std::vector<std::vector<float> > matrice, float valeurIgnore)
+* \brief constructor of the class ColorElevation Map
+* \param matrice of float value
+* \param a value which replace the null value
+*/
+SurfaceElevationFromMatrice::SurfaceElevationFromMatrice()
+{
+
+}
+
+/*!
 *\fn void SurfaceElevationFromMatrice::mapWithMatrice(std::vector<std::vector<float> > matrice, float valeurIgnore)
 *\brief visualize a map from a matrice f vector
 *\param vector of float vector
@@ -84,12 +95,10 @@ void SurfaceElevationFromMatrice::newScalar(std::vector<std::vector<float> >* ma
             float z = matrice->at(x)[y];
             if (z != valeurIgnore)
             {
-                m_scalars->InsertTuple1(i++,-z*10);
+                m_scalars->InsertTuple1(i++,z*1000);
             }
         }
 
-    std::cout << "nombre de coord : " << m_nombrePoint << std::endl;
-    std::cout << "nombre de scalar : " << i << std::endl;
 }
 
 

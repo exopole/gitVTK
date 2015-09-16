@@ -94,7 +94,7 @@ void AfficherCarreCTF::coloration(){
 }
 void AfficherCarreCTF::coloration(float R[35], float G[35], float B[35]){
     
-    lut = vtkSmartPointer<vtkLookupTable>::New();
+    lut = vtkLookupTable::New();
      lut->SetTableRange(0,35); 
     lut->SetNumberOfColors(35); 
     lut->Build(); 

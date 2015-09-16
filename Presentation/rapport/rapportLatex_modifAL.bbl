@@ -1,0 +1,55 @@
+\begin{thebibliography}{10}
+
+\bibitem{gatinel}
+Gatinel Damien.
+\newblock Ophtalmologie, chirurgie de la cataracte, chirurgie réfractive,
+  optique clinique.
+\newblock www.gatinel.com.
+
+\bibitem{ndk858}
+Ben~Boeckel Dave~DeMarle.
+\newblock Vtk 6.2.0, mars 2015.
+\newblock http://www.kitware.com/blog/home/post/858.
+
+\bibitem{ndk538}
+Candemir Doger.
+\newblock Configuring ves for eclipse and ndk-build, aout 2013.
+\newblock http://www.kitware.com/source/home/post/538.
+
+\bibitem{oeil1}
+Gilles~Camus Gabrielle~Bonnet.
+\newblock Les défauts de la vision, septembre 2004.
+\newblock http://www.snv.jussieu.fr/vie/dossiers/defautvision/defvue.html.
+
+\bibitem{bookGatinel}
+Damien Gatinel.
+\newblock {\em Topographie cornéenne}.
+\newblock MASSON, 2011.
+
+\bibitem{ndk2}
+Google.
+\newblock Android ndk.
+\newblock https://developer.android.com/ndk/index.html.
+
+\bibitem{vtk}
+Kitware.
+\newblock Visual tool kit.
+\newblock www.vtk.org.
+
+\bibitem{ndk1}
+Benbourahla Mazim.
+\newblock Introduction au ndk sous android, mars 2013.
+\newblock http://www.tutos-android.com/introduction-ndk-android.
+
+\bibitem{arnaud}
+Arnaud Polette.
+\newblock Modélisation et comparaison d’atlas anatomique numérique 3d de la
+  cornée humaine, juin 2014.
+\newblock Rapport prédoctoral.
+
+\bibitem{ndk860}
+Tim Thirion.
+\newblock Building vtk for mobile architectures, mars 2015.
+\newblock http://www.kitware.com/blog/home/post/860.
+
+\end{thebibliography}

@@ -62,9 +62,9 @@ class ParserTopos
         std::vector<std::vector<float> > getAnteriorTangentialData();
         std::vector<std::vector<float> > getPosteriorTangentialData();
         std::vector<std::vector<float> > getPachymetry();
-        std::vector<float>* getCoordXY();
-        Point* getCoordBFSAnterior();
-        Point* getCoordBFSPosterior();
+        std::vector<float> getCoordXY();
+        Point getCoordBFSAnterior();
+        Point getCoordBFSPosterior();
         float getRadiusBFSAnterior();
         float getRadiusBFSPosterior();
         

@@ -13,8 +13,10 @@ class Triangle
 		void setCoordonne(Point* V0, Point* V1, Point* v2);
 		void setAllX(float value, int type);
 		void setAllX(std::vector<float> * coordX);
+		void setAllX(std::vector<float>  coordX);
 		void setAllY(float value, int type);
 		void setAllY(std::vector<float> * coordY);
+		void setAllY(std::vector<float> coordY);
 		void print();
 		Point* getV0();
 		Point* getV1();
@@ -24,6 +26,8 @@ class Triangle
 		Vec3f V2Vec3f();
 		int findTriangleFromMatrice( float &xP, float &yP, std::vector<std::vector<float> > * matrice, float valeurNull);
 		bool findTriangleFromMatriceAndV0( Point* V0, std::vector<std::vector<float> > * matrice, float valeurNull, int type);
+		bool containZValue(float value);
+
 	private:
 		Point* V0;
 		Point* V1;

@@ -42,7 +42,7 @@ public:
         vtkCellArray *m_polys;
         vtkFloatArray *m_scalars;
         vtkSmartPointer<vtkScalarBarActor> scalarBar;
-        vtkSmartPointer<vtkLookupTable> lut;
+        vtkLookupTable* lut;
         std::vector<std::vector<float> > matrice;
     private:
 

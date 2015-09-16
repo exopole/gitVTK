@@ -94,6 +94,46 @@ void UtilsVTK::visualisation(vtkSmartPointer<vtkActor> actor, vtkSmartPointer<vt
 }
 
 
+void UtilsVTK::visualisation(vtkSmartPointer<vtkActor> actor, vtkSmartPointer<vtkActor> actor2, vtkSmartPointer<vtkActor> actor3){
+
+    vtkSmartPointer<vtkRenderer> renderer = vtkSmartPointer<vtkRenderer>::New();
+  vtkSmartPointer<vtkRenderWindow> renderWindow = vtkSmartPointer<vtkRenderWindow>::New();
+  renderWindow->AddRenderer(renderer);
+  vtkSmartPointer<vtkRenderWindowInteractor> renderWindowInteractor =  vtkSmartPointer<vtkRenderWindowInteractor>::New();
+  renderWindowInteractor->SetRenderWindow(renderWindow);
+
+  renderer->AddActor(actor);
+  renderer->AddActor(actor2);
+  renderer->AddActor(actor3);  
+  
+  renderer->SetBackground(.0, .0, .0); // Background color green
+
+  renderWindow->Render();
+  renderWindowInteractor->Start();
+
+}
+
+void UtilsVTK::visualisation(std::vector <vtkSmartPointer<vtkActor> > vecteurActor ){
+
+    vtkSmartPointer<vtkRenderer> renderer = vtkSmartPointer<vtkRenderer>::New();
+  vtkSmartPointer<vtkRenderWindow> renderWindow = vtkSmartPointer<vtkRenderWindow>::New();
+  renderWindow->AddRenderer(renderer);
+  vtkSmartPointer<vtkRenderWindowInteractor> renderWindowInteractor =  vtkSmartPointer<vtkRenderWindowInteractor>::New();
+  renderWindowInteractor->SetRenderWindow(renderWindow);
+  for (int i = 0; i < vecteurActor.size(); i++)
+  {
+    renderer->AddActor(vecteurActor[i]);
+  }
+   
+  
+  renderer->SetBackground(.0, .0, .0); // Background color green
+
+  renderWindow->Render();
+  renderWindowInteractor->Start();
+
+}
+
+
 UtilsVTK::~UtilsVTK()
 {
     //dtor

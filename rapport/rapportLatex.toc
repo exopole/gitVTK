@@ -1,0 +1,24 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {subsection}{\numberline {1.1}D\IeC {\'e}partement Informatique et Recherche Op\IeC {\'e}rationnelle}{3}
+\contentsline {subsection}{\numberline {1.2}Contexte Biologique}{3}
+\contentsline {subsubsection}{\numberline {1.2.1}L'\IeC {\oe }il}{3}
+\contentsline {subsubsection}{\numberline {1.2.2}La corn\IeC {\'e}e}{4}
+\contentsline {subsubsection}{\numberline {1.2.3}Topographie de la corn\IeC {\'e}e}{5}
+\contentsline {subsubsection}{\numberline {1.2.4}"Best Fit Sphere" (BFS)}{7}
+\contentsline {subsection}{\numberline {1.3}Probl\IeC {\'e}matique du stage}{8}
+\contentsline {section}{\numberline {2}Mat\IeC {\'e}riels et m\IeC {\'e}thodes}{9}
+\contentsline {subsection}{\numberline {2.1}Donn\IeC {\'e}es disponibles}{9}
+\contentsline {subsection}{\numberline {2.2}VTK (Visualisation Toll Kit)}{9}
+\contentsline {subsection}{\numberline {2.3}Langage de programmation : C++}{11}
+\contentsline {subsection}{\numberline {2.4}Programmation mobile}{11}
+\contentsline {section}{\numberline {3}R\IeC {\'e}sultat}{13}
+\contentsline {subsection}{\numberline {3.1}Les classes}{13}
+\contentsline {subsection}{\numberline {3.2}visualisation des faces ant\IeC {\'e}rieure et post\IeC {\'e}rieure}{14}
+\contentsline {subsection}{\numberline {3.3}Le volume}{14}
+\contentsline {subsection}{\numberline {3.4}La pachym\IeC {\'e}trie}{14}
+\contentsline {section}{\numberline {4}Discussion}{15}
+\contentsline {subsection}{\numberline {4.1}Organisation de l'application}{15}
+\contentsline {subsection}{\numberline {4.2}Difficult\IeC {\'e} de la programmation mobile}{15}
+\contentsline {subsection}{\numberline {4.3}Environnement utilis\IeC {\'e} pour coder}{15}
+\contentsline {section}{\numberline {5}Conclusion}{16}

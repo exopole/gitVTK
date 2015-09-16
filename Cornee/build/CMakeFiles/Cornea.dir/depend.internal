@@ -32,6 +32,7 @@ CMakeFiles/Cornea.dir/main.cpp.o
  /usr/local/include/vtk-6.3/vtkAbstractMapper.h
  /usr/local/include/vtk-6.3/vtkAbstractMapper3D.h
  /usr/local/include/vtk-6.3/vtkActor.h
+ /usr/local/include/vtk-6.3/vtkActor2D.h
  /usr/local/include/vtk-6.3/vtkActorCollection.h
  /usr/local/include/vtk-6.3/vtkAlgorithm.h
  /usr/local/include/vtk-6.3/vtkArrayIterator.h
@@ -55,6 +56,7 @@ CMakeFiles/Cornea.dir/main.cpp.o
  /usr/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
  /usr/local/include/vtk-6.3/vtkCommonInformationKeyManager.h
  /usr/local/include/vtk-6.3/vtkConfigure.h
+ /usr/local/include/vtk-6.3/vtkCoordinate.h
  /usr/local/include/vtk-6.3/vtkDataArray.h
  /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
  /usr/local/include/vtk-6.3/vtkDataArrayTemplate.txx
@@ -80,6 +82,7 @@ CMakeFiles/Cornea.dir/main.cpp.o
  /usr/local/include/vtk-6.3/vtkInformationKey.h
  /usr/local/include/vtk-6.3/vtkInformationVector.h
  /usr/local/include/vtk-6.3/vtkIntArray.h
+ /usr/local/include/vtk-6.3/vtkLookupTable.h
  /usr/local/include/vtk-6.3/vtkMappedDataArray.h
  /usr/local/include/vtk-6.3/vtkMappedDataArray.txx
  /usr/local/include/vtk-6.3/vtkMapper.h
@@ -99,7 +102,11 @@ CMakeFiles/Cornea.dir/main.cpp.o
  /usr/local/include/vtk-6.3/vtkRenderWindow.h
  /usr/local/include/vtk-6.3/vtkRenderWindowInteractor.h
  /usr/local/include/vtk-6.3/vtkRenderer.h
+ /usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
  /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+ /usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+ /usr/local/include/vtk-6.3/vtkScalarBarActor.h
+ /usr/local/include/vtk-6.3/vtkScalarsToColors.h
  /usr/local/include/vtk-6.3/vtkSetGet.h
  /usr/local/include/vtk-6.3/vtkSmartPointer.h
  /usr/local/include/vtk-6.3/vtkSmartPointerBase.h
@@ -158,6 +165,7 @@ CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o
  /usr/local/include/vtk-6.3/vtkAbstractMapper.h
  /usr/local/include/vtk-6.3/vtkAbstractMapper3D.h
  /usr/local/include/vtk-6.3/vtkActor.h
+ /usr/local/include/vtk-6.3/vtkActor2D.h
  /usr/local/include/vtk-6.3/vtkActorCollection.h
  /usr/local/include/vtk-6.3/vtkAlgorithm.h
  /usr/local/include/vtk-6.3/vtkArrayIterator.h
@@ -181,6 +189,7 @@ CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o
  /usr/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
  /usr/local/include/vtk-6.3/vtkCommonInformationKeyManager.h
  /usr/local/include/vtk-6.3/vtkConfigure.h
+ /usr/local/include/vtk-6.3/vtkCoordinate.h
  /usr/local/include/vtk-6.3/vtkDataArray.h
  /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
  /usr/local/include/vtk-6.3/vtkDataArrayTemplate.txx
@@ -206,6 +215,7 @@ CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o
  /usr/local/include/vtk-6.3/vtkInformationKey.h
  /usr/local/include/vtk-6.3/vtkInformationVector.h
  /usr/local/include/vtk-6.3/vtkIntArray.h
+ /usr/local/include/vtk-6.3/vtkLookupTable.h
  /usr/local/include/vtk-6.3/vtkMappedDataArray.h
  /usr/local/include/vtk-6.3/vtkMappedDataArray.txx
  /usr/local/include/vtk-6.3/vtkMapper.h
@@ -225,7 +235,11 @@ CMakeFiles/Cornea.dir/src/ColorElevationMap.cpp.o
  /usr/local/include/vtk-6.3/vtkRenderWindow.h
  /usr/local/include/vtk-6.3/vtkRenderWindowInteractor.h
  /usr/local/include/vtk-6.3/vtkRenderer.h
+ /usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
  /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+ /usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+ /usr/local/include/vtk-6.3/vtkScalarBarActor.h
+ /usr/local/include/vtk-6.3/vtkScalarsToColors.h
  /usr/local/include/vtk-6.3/vtkSetGet.h
  /usr/local/include/vtk-6.3/vtkSmartPointer.h
  /usr/local/include/vtk-6.3/vtkSmartPointerBase.h
@@ -316,6 +330,7 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o
  /usr/local/include/vtk-6.3/vtkAbstractMapper.h
  /usr/local/include/vtk-6.3/vtkAbstractMapper3D.h
  /usr/local/include/vtk-6.3/vtkActor.h
+ /usr/local/include/vtk-6.3/vtkActor2D.h
  /usr/local/include/vtk-6.3/vtkActorCollection.h
  /usr/local/include/vtk-6.3/vtkAlgorithm.h
  /usr/local/include/vtk-6.3/vtkArrayIterator.h
@@ -339,6 +354,7 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o
  /usr/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
  /usr/local/include/vtk-6.3/vtkCommonInformationKeyManager.h
  /usr/local/include/vtk-6.3/vtkConfigure.h
+ /usr/local/include/vtk-6.3/vtkCoordinate.h
  /usr/local/include/vtk-6.3/vtkDataArray.h
  /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
  /usr/local/include/vtk-6.3/vtkDataArrayTemplate.txx
@@ -364,6 +380,7 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o
  /usr/local/include/vtk-6.3/vtkInformationKey.h
  /usr/local/include/vtk-6.3/vtkInformationVector.h
  /usr/local/include/vtk-6.3/vtkIntArray.h
+ /usr/local/include/vtk-6.3/vtkLookupTable.h
  /usr/local/include/vtk-6.3/vtkMappedDataArray.h
  /usr/local/include/vtk-6.3/vtkMappedDataArray.txx
  /usr/local/include/vtk-6.3/vtkMapper.h
@@ -383,7 +400,11 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisation.cpp.o
  /usr/local/include/vtk-6.3/vtkRenderWindow.h
  /usr/local/include/vtk-6.3/vtkRenderWindowInteractor.h
  /usr/local/include/vtk-6.3/vtkRenderer.h
+ /usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
  /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+ /usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+ /usr/local/include/vtk-6.3/vtkScalarBarActor.h
+ /usr/local/include/vtk-6.3/vtkScalarsToColors.h
  /usr/local/include/vtk-6.3/vtkSetGet.h
  /usr/local/include/vtk-6.3/vtkSmartPointer.h
  /usr/local/include/vtk-6.3/vtkSmartPointerBase.h
@@ -443,6 +464,7 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o
  /usr/local/include/vtk-6.3/vtkAbstractMapper.h
  /usr/local/include/vtk-6.3/vtkAbstractMapper3D.h
  /usr/local/include/vtk-6.3/vtkActor.h
+ /usr/local/include/vtk-6.3/vtkActor2D.h
  /usr/local/include/vtk-6.3/vtkActorCollection.h
  /usr/local/include/vtk-6.3/vtkAlgorithm.h
  /usr/local/include/vtk-6.3/vtkArrayIterator.h
@@ -466,6 +488,7 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o
  /usr/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
  /usr/local/include/vtk-6.3/vtkCommonInformationKeyManager.h
  /usr/local/include/vtk-6.3/vtkConfigure.h
+ /usr/local/include/vtk-6.3/vtkCoordinate.h
  /usr/local/include/vtk-6.3/vtkDataArray.h
  /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
  /usr/local/include/vtk-6.3/vtkDataArrayTemplate.txx
@@ -491,6 +514,7 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o
  /usr/local/include/vtk-6.3/vtkInformationKey.h
  /usr/local/include/vtk-6.3/vtkInformationVector.h
  /usr/local/include/vtk-6.3/vtkIntArray.h
+ /usr/local/include/vtk-6.3/vtkLookupTable.h
  /usr/local/include/vtk-6.3/vtkMappedDataArray.h
  /usr/local/include/vtk-6.3/vtkMappedDataArray.txx
  /usr/local/include/vtk-6.3/vtkMapper.h
@@ -510,7 +534,11 @@ CMakeFiles/Cornea.dir/src/PachymetryVisualisationFromMatrice.cpp.o
  /usr/local/include/vtk-6.3/vtkRenderWindow.h
  /usr/local/include/vtk-6.3/vtkRenderWindowInteractor.h
  /usr/local/include/vtk-6.3/vtkRenderer.h
+ /usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
  /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+ /usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+ /usr/local/include/vtk-6.3/vtkScalarBarActor.h
+ /usr/local/include/vtk-6.3/vtkScalarsToColors.h
  /usr/local/include/vtk-6.3/vtkSetGet.h
  /usr/local/include/vtk-6.3/vtkSmartPointer.h
  /usr/local/include/vtk-6.3/vtkSmartPointerBase.h
@@ -597,6 +625,7 @@ CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o
  /usr/local/include/vtk-6.3/vtkAbstractMapper.h
  /usr/local/include/vtk-6.3/vtkAbstractMapper3D.h
  /usr/local/include/vtk-6.3/vtkActor.h
+ /usr/local/include/vtk-6.3/vtkActor2D.h
  /usr/local/include/vtk-6.3/vtkActorCollection.h
  /usr/local/include/vtk-6.3/vtkAlgorithm.h
  /usr/local/include/vtk-6.3/vtkArrayIterator.h
@@ -620,6 +649,7 @@ CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o
  /usr/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
  /usr/local/include/vtk-6.3/vtkCommonInformationKeyManager.h
  /usr/local/include/vtk-6.3/vtkConfigure.h
+ /usr/local/include/vtk-6.3/vtkCoordinate.h
  /usr/local/include/vtk-6.3/vtkDataArray.h
  /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
  /usr/local/include/vtk-6.3/vtkDataArrayTemplate.txx
@@ -645,6 +675,7 @@ CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o
  /usr/local/include/vtk-6.3/vtkInformationKey.h
  /usr/local/include/vtk-6.3/vtkInformationVector.h
  /usr/local/include/vtk-6.3/vtkIntArray.h
+ /usr/local/include/vtk-6.3/vtkLookupTable.h
  /usr/local/include/vtk-6.3/vtkMappedDataArray.h
  /usr/local/include/vtk-6.3/vtkMappedDataArray.txx
  /usr/local/include/vtk-6.3/vtkMapper.h
@@ -664,7 +695,11 @@ CMakeFiles/Cornea.dir/src/SurfaceElevationFromMatrice.cpp.o
  /usr/local/include/vtk-6.3/vtkRenderWindow.h
  /usr/local/include/vtk-6.3/vtkRenderWindowInteractor.h
  /usr/local/include/vtk-6.3/vtkRenderer.h
+ /usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
  /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+ /usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+ /usr/local/include/vtk-6.3/vtkScalarBarActor.h
+ /usr/local/include/vtk-6.3/vtkScalarsToColors.h
  /usr/local/include/vtk-6.3/vtkSetGet.h
  /usr/local/include/vtk-6.3/vtkSmartPointer.h
  /usr/local/include/vtk-6.3/vtkSmartPointerBase.h
@@ -725,6 +760,7 @@ CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o
  /usr/local/include/vtk-6.3/vtkAbstractMapper.h
  /usr/local/include/vtk-6.3/vtkAbstractMapper3D.h
  /usr/local/include/vtk-6.3/vtkActor.h
+ /usr/local/include/vtk-6.3/vtkActor2D.h
  /usr/local/include/vtk-6.3/vtkActorCollection.h
  /usr/local/include/vtk-6.3/vtkAlgorithm.h
  /usr/local/include/vtk-6.3/vtkArrayIterator.h
@@ -748,6 +784,7 @@ CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o
  /usr/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
  /usr/local/include/vtk-6.3/vtkCommonInformationKeyManager.h
  /usr/local/include/vtk-6.3/vtkConfigure.h
+ /usr/local/include/vtk-6.3/vtkCoordinate.h
  /usr/local/include/vtk-6.3/vtkDataArray.h
  /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
  /usr/local/include/vtk-6.3/vtkDataArrayTemplate.txx
@@ -773,6 +810,7 @@ CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o
  /usr/local/include/vtk-6.3/vtkInformationKey.h
  /usr/local/include/vtk-6.3/vtkInformationVector.h
  /usr/local/include/vtk-6.3/vtkIntArray.h
+ /usr/local/include/vtk-6.3/vtkLookupTable.h
  /usr/local/include/vtk-6.3/vtkMappedDataArray.h
  /usr/local/include/vtk-6.3/vtkMappedDataArray.txx
  /usr/local/include/vtk-6.3/vtkMapper.h
@@ -792,7 +830,11 @@ CMakeFiles/Cornea.dir/src/SurfaceScalarFromMatrice.cpp.o
  /usr/local/include/vtk-6.3/vtkRenderWindow.h
  /usr/local/include/vtk-6.3/vtkRenderWindowInteractor.h
  /usr/local/include/vtk-6.3/vtkRenderer.h
+ /usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
  /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+ /usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+ /usr/local/include/vtk-6.3/vtkScalarBarActor.h
+ /usr/local/include/vtk-6.3/vtkScalarsToColors.h
  /usr/local/include/vtk-6.3/vtkSetGet.h
  /usr/local/include/vtk-6.3/vtkSmartPointer.h
  /usr/local/include/vtk-6.3/vtkSmartPointerBase.h
@@ -1036,6 +1078,7 @@ CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o
  /usr/local/include/vtk-6.3/vtkAbstractMapper.h
  /usr/local/include/vtk-6.3/vtkAbstractMapper3D.h
  /usr/local/include/vtk-6.3/vtkActor.h
+ /usr/local/include/vtk-6.3/vtkActor2D.h
  /usr/local/include/vtk-6.3/vtkActorCollection.h
  /usr/local/include/vtk-6.3/vtkAlgorithm.h
  /usr/local/include/vtk-6.3/vtkArrayIterator.h
@@ -1059,6 +1102,7 @@ CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o
  /usr/local/include/vtk-6.3/vtkCommonExecutionModelModule.h
  /usr/local/include/vtk-6.3/vtkCommonInformationKeyManager.h
  /usr/local/include/vtk-6.3/vtkConfigure.h
+ /usr/local/include/vtk-6.3/vtkCoordinate.h
  /usr/local/include/vtk-6.3/vtkDataArray.h
  /usr/local/include/vtk-6.3/vtkDataArrayTemplate.h
  /usr/local/include/vtk-6.3/vtkDataArrayTemplate.txx
@@ -1084,6 +1128,7 @@ CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o
  /usr/local/include/vtk-6.3/vtkInformationKey.h
  /usr/local/include/vtk-6.3/vtkInformationVector.h
  /usr/local/include/vtk-6.3/vtkIntArray.h
+ /usr/local/include/vtk-6.3/vtkLookupTable.h
  /usr/local/include/vtk-6.3/vtkMappedDataArray.h
  /usr/local/include/vtk-6.3/vtkMappedDataArray.txx
  /usr/local/include/vtk-6.3/vtkMapper.h
@@ -1103,7 +1148,11 @@ CMakeFiles/Cornea.dir/src/VolumeVisualisation.cpp.o
  /usr/local/include/vtk-6.3/vtkRenderWindow.h
  /usr/local/include/vtk-6.3/vtkRenderWindowInteractor.h
  /usr/local/include/vtk-6.3/vtkRenderer.h
+ /usr/local/include/vtk-6.3/vtkRenderingAnnotationModule.h
  /usr/local/include/vtk-6.3/vtkRenderingCoreModule.h
+ /usr/local/include/vtk-6.3/vtkRenderingFreeTypeModule.h
+ /usr/local/include/vtk-6.3/vtkScalarBarActor.h
+ /usr/local/include/vtk-6.3/vtkScalarsToColors.h
  /usr/local/include/vtk-6.3/vtkSetGet.h
  /usr/local/include/vtk-6.3/vtkSmartPointer.h
  /usr/local/include/vtk-6.3/vtkSmartPointerBase.h

@@ -8,7 +8,7 @@
 * \param matrice of float value for scalar
 * \param a value which replace the null value
 */
-SurfaceScalarFromMatrice::SurfaceScalarFromMatrice( std::vector<std::vector<float> > matrice, std::vector<std::vector<float> > matriceScalar, float valeurIgnore): SurfaceElevationFromMatrice(matrice, valeurIgnore)
+SurfaceScalarFromMatrice::SurfaceScalarFromMatrice( std::vector<std::vector<float> > matrice, std::vector<std::vector<float> > matriceScalar, float valeurIgnore): SurfaceElevationFromMatrice()
 {
     m_nombrePoint = 0;
     m_maxElevation = UtilsVector::getMax(&matrice, valeurIgnore);
@@ -19,6 +19,20 @@ SurfaceScalarFromMatrice::SurfaceScalarFromMatrice( std::vector<std::vector<floa
     else m_maxScal = -1*m_minScal;
     SurfaceScalarFromMatrice::newMap();
     SurfaceScalarFromMatrice::mapWithMatrice( &matrice,&matriceScalar, valeurIgnore);
+    SurfaceScalarFromMatrice::createMapper();
+    m_actor->SetMapper(m_mapper);
+}
+
+
+SurfaceScalarFromMatrice::SurfaceScalarFromMatrice( std::vector<std::vector<float> > matrice, std::vector<std::vector<float> > matriceScalar, float min, float max, float R[35], float G[35], float B[35], float valeurIgnore): SurfaceElevationFromMatrice()
+{
+    m_nombrePoint = 0;
+    m_minScal = min;
+    m_maxScal = max;
+
+    SurfaceScalarFromMatrice::newMap();
+    SurfaceScalarFromMatrice::mapWithMatrice( &matrice,&matriceScalar, valeurIgnore);
+    ColorElevationMap::setLookUpTable(R, G, B);
     SurfaceScalarFromMatrice::createMapper();
     m_actor->SetMapper(m_mapper);
 }
